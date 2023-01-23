@@ -1,0 +1,35 @@
+{
+  "AboutUs": {
+    "description": "Auto imported from components/aboutUs.vue"
+  },
+  "Divider": {
+    "description": "Auto imported from components/divider.vue"
+  },
+  "EliasEnglenLogo": {
+    "description": "Auto imported from components/EliasEnglenLogo.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "MainHeader": {
+    "description": "Auto imported from components/mainHeader.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Preisliste": {
+    "description": "Auto imported from components/preisliste.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "UnserePreise": {
+    "description": "Auto imported from components/unserePreise.vue"
+  },
+  "UnsereProdukte": {
+    "description": "Auto imported from components/unsereProdukte.vue"
+  }
+}
