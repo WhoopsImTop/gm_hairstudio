@@ -1,13 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <div class="content-container" style="margin-top: 130px">
-      <main-header></main-header>
-      <divider></divider>
-      <about-us id="ueber-uns"></about-us>
-      <unsere-preise id="unsere-preise"></unsere-preise>
-    </div>
-    <unsere-produkte id="unsere-produkte"></unsere-produkte>
+    <Nuxt />
     <Footer></Footer>
   </div>
 </template>
@@ -15,20 +9,10 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import MainHeader from "../components/mainHeader.vue";
-import Divider from "../components/divider.vue";
-import AboutUs from "../components/aboutUs.vue";
-import UnserePreise from "../components/unserePreise.vue";
-import UnsereProdukte from "../components/unsereProdukte.vue";
 export default {
   components: {
     Header,
     Footer,
-    MainHeader,
-    Divider,
-    AboutUs,
-    UnserePreise,
-    UnsereProdukte,
   },
 };
 </script>
@@ -277,7 +261,7 @@ p {
 .button {
   padding: 10px 20px;
   background-color: var(--orange-color);
-  color: #ffffff;
+  color: #ffffff !important;
   text-transform: uppercase;
   width: max-content;
 }

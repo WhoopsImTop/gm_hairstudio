@@ -1,33 +1,27 @@
 <template>
-    <div class="content">
-        <h1>{{ article.title }}</h1>
-        <p style="min-width: unset;" v-html="$md.render(article.description)"></p>
-    </div>
+  <div class="content-container" style="margin-top: 130px;">
+    <nuxt-content :document="page"></nuxt-content>
+  </div>
 </template>
 
 <script>
 export default {
-    layout: 'main',
-    head() {
-        return {
-            title: this.article.title,
-            meta: [
-                // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-                {
-                    hid: "description",
-                    name: "description",
-                    content: this.article.description
-                }
-            ]
-        };
-    },
-    async asyncData({ $content, params }) {
-        const article = await $content(params.slug).fetch();
-
-        return { article };
-    },
+  layout: "main",
+  data() {
+    return {
+      title: "Home",
+    };
+  },
+  async asyncData({ $content, params }) {
+    const page = await $content("/", params.slug).fetch();
+    return { page };
+  },
 };
 </script>
 
 <style>
+.content-container a {
+  color: var(--orange-color);
+  text-decoration: underline;
+}
 </style>

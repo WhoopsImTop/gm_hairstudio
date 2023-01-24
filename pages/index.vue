@@ -1,12 +1,30 @@
 <template>
-  <div class="homepage-container"></div>
+  <div>
+    <div class="content-container" style="margin-top: 130px">
+      <main-header></main-header>
+      <divider></divider>
+      <about-us id="ueber-uns"></about-us>
+      <unsere-preise id="unsere-preise"></unsere-preise>
+    </div>
+    <unsere-produkte id="unsere-produkte"></unsere-produkte>
+  </div>
 </template>
 
 <script>
-import Header from "../components/Header.vue";
+import MainHeader from "../components/mainHeader.vue";
+import Divider from "../components/divider.vue";
+import AboutUs from "../components/aboutUs.vue";
+import UnserePreise from "../components/unserePreise.vue";
+import UnsereProdukte from "../components/unsereProdukte.vue";
 export default {
-  components: { Header },
   layout: "main",
+  components: {
+    MainHeader,
+    Divider,
+    AboutUs,
+    UnserePreise,
+    UnsereProdukte,
+  },
   data: () => {
     return {};
   },

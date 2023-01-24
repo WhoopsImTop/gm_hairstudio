@@ -14,6 +14,5 @@ You can directly use them in pages and other components without the need to impo
 - `<MainHeader>` | `<main-header>` (components/mainHeader.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Preisliste>` | `<preisliste>` (components/preisliste.vue)
-- `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<UnserePreise>` | `<unsere-preise>` (components/unserePreise.vue)
 - `<UnsereProdukte>` | `<unsere-produkte>` (components/unsereProdukte.vue)

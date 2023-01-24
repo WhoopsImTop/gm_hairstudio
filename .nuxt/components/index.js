@@ -6,7 +6,6 @@ export { default as Header } from '../..\\components\\Header.vue'
 export { default as MainHeader } from '../..\\components\\mainHeader.vue'
 export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
 export { default as Preisliste } from '../..\\components\\preisliste.vue'
-export { default as Tutorial } from '../..\\components\\Tutorial.vue'
 export { default as UnserePreise } from '../..\\components\\unserePreise.vue'
 export { default as UnsereProdukte } from '../..\\components\\unsereProdukte.vue'
 
