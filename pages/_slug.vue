@@ -24,4 +24,9 @@ export default {
   color: var(--orange-color);
   text-decoration: underline;
 }
+
+.content-container h4 {
+  color: var(--orange-color);
+  text-decoration: none;
+}
 </style>

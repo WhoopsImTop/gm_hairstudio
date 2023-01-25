@@ -100,6 +100,7 @@ export default {
 
 .price-dashed-line {
   border-top: 2px dashed var(--orange-color);
+  border-bottom: 0px;
   width: 100%;
   margin: 0px 10px;
 }

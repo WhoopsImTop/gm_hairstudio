@@ -3,9 +3,9 @@
     <div class="content-container">
       <div class="row">
         <div class="row">
-          <a href="https://eliasenglen-grafikdesign.de" target="_blank"
+          <a class="credencials" href="https://eliasenglen-grafikdesign.de" target="_blank"
             ><EliasEnglenLogo
-              style="margin-right: 30px; width: 30px; opacity: 0.5"
+              style="width: 30px; opacity: 0.5"
             ></EliasEnglenLogo
           ></a>
           <div class="link-container">
@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .footer-container {
-  background-color: #111111;
+  background-color: var(--menu-bg-color);
   padding: 20px;
   margin-top: 50px;
 }
@@ -43,10 +43,15 @@ export default {
 
 .link-container a,
 .copyright {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   padding: 10px 0;
   margin: 0px 10px;
+}
+
+a.credencials {
+  width: max-content;
+  margin-right: 30px;
 }
 
 @media (max-width: 900px) {
@@ -65,7 +70,11 @@ export default {
   }
 
   .copyright p {
-    font-size: 16px;
+    font-size: 12px;
+  }
+
+  a.credencials {
+    margin-right: 0px;
   }
 }
 </style>

@@ -508,7 +508,7 @@ export default {
 }
 
 .preis-notice {
-  color: #fff;
+  color: var(--text-color);
 }
 
 @media (max-width: 1000px) {

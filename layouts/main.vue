@@ -209,7 +209,7 @@ export default {
 body {
   box-sizing: border-box;
   margin: 0px;
-  background-color: #222222;
+  background-color: #f8f8f8;
 }
 
 :root {
@@ -217,7 +217,7 @@ body {
   --orange-color: #a48242;
   --orange-color-hover: #e6bb6a;
   --green-color: #539e33;
-  --menu-bg-color: #fff5ec;
+  --menu-bg-color: #ffffff;
   --menu-border-color: #000000;
 }
 
@@ -228,7 +228,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Noto Serif", serif;
   margin: 0;
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 h2 {
@@ -237,19 +237,19 @@ h2 {
   text-transform: uppercase;
   font-family: "Noto Serif", serif;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 h3 {
   font-size: 40px;
   line-height: 50px;
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 p {
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 .content-container {
@@ -263,6 +263,7 @@ p {
   background-color: var(--orange-color);
   color: #ffffff !important;
   text-transform: uppercase;
+  text-decoration: none !important;
   width: max-content;
 }
 

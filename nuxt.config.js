@@ -1,6 +1,6 @@
 export default {
   target: "static",
-  ssr: true,
+  ssr: false,
   /*
    ** Headers of the page
    */
@@ -25,7 +25,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/generatePDF.js" }],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -53,6 +53,10 @@ export default {
 
   markdownit: {
     runtime: true, // Support `$md()`
+    preset: "default",
+    linkify: true,
+    breaks: true,
+    html: true,
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -62,10 +66,8 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  content: {    
+    path: "/content/",
   },
 
   generate: {

@@ -47,7 +47,7 @@ export default {
 }
 
 .navigation-background {
-  background-color: #111111;
+  background-color: var(--menu-bg-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -104,7 +104,7 @@ a {
 .line-3 {
   width: 30px;
   height: 3px;
-  background-color: var(--menu-bg-color);
+  background-color: var(--orange-color);
   margin: 3px 0;
   transition: 0.3s ease-in-out;
 }
@@ -125,7 +125,7 @@ a:hover {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: #111111;
+    background-color: var(--menu-bg-color);
     top: 100px;
     transition: 0.5s ease-in-out;
   }
