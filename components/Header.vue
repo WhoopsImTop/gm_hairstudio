@@ -19,11 +19,11 @@
         :class="active ? 'active' : ''"
       >
         <div class="nav-links">
-          <nuxt-link class="nav-link" to="/">Startseite</nuxt-link>
-          <nuxt-link class="nav-link" to="/#ueber-uns"
+          <nuxt-link class="nav-link" to="/" @click="active = false">Startseite</nuxt-link>
+          <nuxt-link class="nav-link" to="/#ueber-uns" @click="active = false"
             >Über uns</nuxt-link
           >
-          <nuxt-link class="nav-link" to="/#unsere-preise">Preise</nuxt-link>
+          <nuxt-link class="nav-link" to="/#unsere-preise" @click="active = false">Preise</nuxt-link>
           <a class="nav-link button" href="https://www.studiobookr.com/gm-professional-hairstudio-67752?dcc=1">Termin Buchen</a>
         </div>
       </div>
