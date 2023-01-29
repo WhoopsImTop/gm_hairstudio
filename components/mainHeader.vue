@@ -13,7 +13,8 @@
       </p>
       <nuxt-link class="button" to="/#unsere-preise">Unser Angebot</nuxt-link>
     </div>
-    <img class="headerImg" src="/img/headerImg.png" alt="Haare" />
+    <img class="headerImg left" src="/img/men.jpeg" alt="Haare" />
+    <img class="headerImg right" src="/img/woman.jpeg" alt="Haare" />
   </div>
 </template>
 
@@ -31,17 +32,37 @@ export default {};
 }
 
 .headerImg {
-  animation: fadeup 2s ease-in-out;
+  animation: fadeup;
+  animation-timing-function: ease-in-out;
   position: absolute;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  height: auto;
   z-index: -1;
+}
+
+.left {
+  right: -50px;
+  top: 50px;
   bottom: 0;
-  right: 0;
-  top: 0;
+  animation-duration: 1.5s;
+}
+
+.right {
+  top: 300px;
+  bottom: 0px;
+  right: 370px;
+  animation-duration: 2s;
 }
 
 /* make fadeup animation for image */
 @keyframes fadeup {
   0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  40% {
     opacity: 0;
     transform: translateY(30px);
   }
@@ -57,24 +78,59 @@ export default {};
 
 @media (max-width: 1200px) {
   .header-content {
-    position: unset;
+    position: relative;
     flex-direction: column-reverse;
     padding: 0;
   }
 
-  .header-content img {
-    position: unset;
-    max-height: 50vh;
+  .text-content {
+    margin-top: 30vh;
+  }
+
+  .headerImg {
+    position: absolute;
+    width: 150px;
     object-fit: cover;
+  }
+
+  .right {
+    transform: rotate(15deg);
+    right: 10px;
+    top: 0;
+    transition: .5s;
+  }
+
+  .left {
+    transform: rotate(5deg);
+    right: 10px;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    transition: .5s;
+  }
+
+  @keyframes fadeup {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
 @media (max-width: 1000px) {
-    .text-content h1 {
-        margin-top: 20px
-    }
-    .text-content p {
-        margin-top: 20px;
-    }
+  .text-content h1 {
+    margin-top: 20px;
+  }
+  .text-content p {
+    margin-top: 20px;
+  }
 }
 </style>

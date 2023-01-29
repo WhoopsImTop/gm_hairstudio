@@ -1,4 +1,5 @@
 export { default as AboutUs } from '../..\\components\\aboutUs.vue'
+export { default as BookingBtn } from '../..\\components\\bookingBtn.vue'
 export { default as Divider } from '../..\\components\\divider.vue'
 export { default as EliasEnglenLogo } from '../..\\components\\EliasEnglenLogo.vue'
 export { default as Footer } from '../..\\components\\Footer.vue'

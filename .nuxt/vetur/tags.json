@@ -2,6 +2,9 @@
   "AboutUs": {
     "description": "Auto imported from components/aboutUs.vue"
   },
+  "BookingBtn": {
+    "description": "Auto imported from components/bookingBtn.vue"
+  },
   "Divider": {
     "description": "Auto imported from components/divider.vue"
   },

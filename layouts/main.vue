@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header></Header>
+    <booking-btn></booking-btn>
     <Nuxt />
     <Footer></Footer>
   </div>
@@ -9,13 +10,15 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import BookingBtn from '../components/bookingBtn.vue';
 export default {
   components: {
     Header,
     Footer,
   },
 };
-</script>
+</script>,
+    BookingBtn
 
 <style>
 /* poppins-200 - latin */
