@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://www.studiobookr.com/gm-professional-hairstudio-67752?dcc=1"
+    href="https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA"
     target="_blank"
     class="booking-btn"
   >
