@@ -13,7 +13,7 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    const page = await $content("/", params.slug).fetch();
+    const page = await $content(params.slug).fetch();
     return { page };
   },
 };
