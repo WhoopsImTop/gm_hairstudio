@@ -49,6 +49,7 @@ export default {
   background-color: var(--menu-bg-color);
   padding: 20px;
   margin-top: 50px;
+  z-index: 999
 }
 
 .row {
