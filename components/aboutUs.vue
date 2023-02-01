@@ -5,13 +5,19 @@
     <div class="image-text-row">
       <div class="img-col">
         <img src="img/about.png" alt="about" />
+        <!-- <div class="person-1">
+          <span class="name"><strong>Spitzname: Mo</strong></span><br>
+          <span class="position">Frisörmeister</span>
+        </div> -->
+        <!-- <div class="person-2">
+          <span class="name"><strong>Spitzname: Gülsi</strong></span><br>
+          <span class="position">Diplome Coloristin</span>
+        </div> -->
       </div>
       <div class="text-col">
         <p>
-          Unter dem Aspekt "stilvoll - zeitlos - modern" werden Sie bei uns
-          individuell und typgerecht beraten! Wir sind Gülseren und Mohammad,
-          Haare sind unsere Leidenschaft. Wir werden Ihnen den perfekten, auf
-          ihre wünsche angepassten Haarschnitt bieten.
+          Wir sind Gülseren und Mohammad, Diplom Coloristin und Friseurmeister. Wir werden Ihnen den perfekten, auf ihre
+          Wünsche angepassten Look bieten.
         </p>
       </div>
     </div>
@@ -40,9 +46,25 @@ export default {};
 }
 
 .image-text-row p {
-    text-align: left;
-    padding: 0 40px;
+  text-align: left;
+  padding: 0 40px;
 }
+
+.img-col {
+  position: relative;
+}
+
+/* .person-1 {
+  position: absolute;
+  bottom: -70px;
+  left: 130px;
+}
+
+.person-2 {
+  position: absolute;
+  bottom: -70px;
+  right: 140px;
+} */
 
 
 @media (max-width: 1200px) {
@@ -59,6 +81,4 @@ export default {};
     padding: 0;
   }
 }
-
-
 </style>
