@@ -2,15 +2,13 @@
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Elias\\\\Documents\\\\gm_hairstudio\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_8718c150"
+    "component": "C:\\\\Users\\\\User\\\\Documents\\\\gm_hairstudio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   },
   {
     "name": "slug",
     "path": "/:slug",
-    "component": "C:\\\\Users\\\\Elias\\\\Documents\\\\gm_hairstudio\\\\pages\\\\_slug.vue",
-    "chunkName": "pages/_slug",
-    "_name": "_8a8603e0"
+    "component": "C:\\\\Users\\\\User\\\\Documents\\\\gm_hairstudio\\\\pages\\\\_slug.vue",
+    "chunkName": "pages/_slug"
   }
 ]

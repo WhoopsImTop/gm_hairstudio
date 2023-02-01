@@ -2,12 +2,18 @@
   <div class="content header-content">
     <div class="text-content">
       <h1>
-        Herzlich Willkommen.
+        Haare sind <br />
+        unsere passion!
       </h1>
       <p style="max-width: 50%">
-        Wir laden Dich ein, unser einzigartiges Ambiente in Freiburg am Güterbahnhof kennenzulernen.
-        Als geschultes Team verleihen wir dir den LOOK der zu dir passt. Wir sind Detailverliebt, und legen großen Wert
-        auf typgerechte, individuelle Beratung. Sie sind sich noch unsicher?<br>
+        Herzlich Willkommen bei GM Professional Hairstudio. <br />
+        <span class="hightlight">
+          Wir laden Dich ein, unser einzigartiges Ambiente in Freiburg am
+          Güterbahnhof kennenzulernen. Als geschultes Team verleihen wir dir den
+          LOOK der zu dir passt.</span
+        >
+        Wir sind Detailverliebt, und legen großen Wert auf typgerechte,
+        individuelle Beratung. Sie sind sich noch unsicher? <br />
         Buche jetzt einen Termin und verschaffe dir dein eigenes Bild.
       </p>
       <nuxt-link class="button" to="/#unsere-preise">Unser Angebot</nuxt-link>
@@ -39,6 +45,10 @@ export default {};
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
   height: auto;
   z-index: -1;
+}
+
+.hightlight {
+  color: var(--orange-color);
 }
 
 .left {
@@ -98,7 +108,7 @@ export default {};
     transform: rotate(15deg);
     right: 10px;
     top: 0;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .left {
@@ -107,7 +117,7 @@ export default {};
     top: 0;
     left: 10px;
     bottom: 0;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   @keyframes fadeup {
