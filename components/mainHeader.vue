@@ -5,7 +5,7 @@
         Haare sind <br />
         unsere passion!
       </h1>
-      <p style="max-width: 50%">
+      <p class="landing-content">
         Herzlich Willkommen bei GM Professional Hairstudio. <br />
         <span class="hightlight">
           Wir laden Dich ein, unser einzigartiges Ambiente in Freiburg am
@@ -87,6 +87,10 @@ export default {};
   margin-bottom: 50px;
 }
 
+.landing-content {
+  max-width: 50%
+}
+
 @media (max-width: 1200px) {
   .header-content {
     position: relative;
@@ -145,6 +149,10 @@ export default {};
 
   .text-content p {
     margin-top: 20px;
+  }
+
+  .landing-content {
+    max-width: 100%
   }
 }
 </style>
