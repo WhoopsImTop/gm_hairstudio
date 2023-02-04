@@ -174,4 +174,15 @@ export default {
     transform: translateX(-80%);
   }
 }
+
+@media (max-width: 900px) {
+    .marquee {
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .marquee__item {
+        width: 180px;
+    }
+}
 </style>

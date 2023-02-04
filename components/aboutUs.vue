@@ -29,7 +29,7 @@
               alt="toggle-btn"
             />
           </div>
-          <p>
+          <p class="about-text">
             Ich bin seit dem 14. Lebensjahr begeistert davon was ein Haarschnitt
             ausmachen kann, Meine besonderen Fähigkeiten habe ich im Herren /
             Barberbereich. Mich begeistern Klassische wie auch moderne und
@@ -53,7 +53,7 @@
               alt="toggle-btn"
             />
           </div>
-          <p>
+          <p class="about-text">
             Meine Stärken liegen darin, meiner Kreativität im Colour Bereich
             freien Lauf zu lassen. Klassische Strähnen, Farbveredelungen,
             Farbkorrekturen, Extensions, Stylings oder aufwendige Balayge
@@ -156,6 +156,16 @@ export default {
     margin-top: 50px;
     padding: 0;
     text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-text {
+    padding: 20px 0;
+  }
+
+  .about-box {
+    padding: 10px 20px;
   }
 }
 </style>
