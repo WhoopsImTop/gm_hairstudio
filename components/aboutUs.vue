@@ -13,7 +13,11 @@
           Haare sind unsere Leidenschaft. Wir werden Ihnen den perfekten, auf
           ihre wünsche angepassten Haarschnitt bieten.
         </p>
-        <div class="about-box" @click="moActive = !moActive" :class="moActive ? '' : 'collapsed'">
+        <div
+          class="about-box"
+          @click="moActive = !moActive"
+          :class="moActive ? '' : 'collapsed'"
+        >
           <div class="about-box-heading">
             <div>
               <p class="name hightlight">Mohammad Hackla</p>
@@ -33,7 +37,11 @@
             Qualität statt Quantität wird bei mir großgeschrieben!
           </p>
         </div>
-        <div class="about-box" @click="guelsiActive = !guelsiActive" :class="guelsiActive ? '' : 'collapsed'">
+        <div
+          class="about-box"
+          @click="guelsiActive = !guelsiActive"
+          :class="guelsiActive ? '' : 'collapsed'"
+        >
           <div class="about-box-heading">
             <div>
               <p class="name hightlight">Gülseren Maria Martines</p>
@@ -144,9 +152,10 @@ export default {
     max-width: 100%;
   }
 
-  .image-text-row p {
+  .text-col {
     margin-top: 50px;
     padding: 0;
+    text-align: left;
   }
 }
 </style>

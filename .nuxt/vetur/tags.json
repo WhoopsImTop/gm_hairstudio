@@ -17,6 +17,9 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "ImageGrid": {
+    "description": "Auto imported from components/imageGrid.vue"
+  },
   "MainHeader": {
     "description": "Auto imported from components/mainHeader.vue"
   },

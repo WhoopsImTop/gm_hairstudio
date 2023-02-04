@@ -12,6 +12,7 @@ You can directly use them in pages and other components without the need to impo
 - `<EliasEnglenLogo>` | `<elias-englen-logo>` (components/EliasEnglenLogo.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
+- `<ImageGrid>` | `<image-grid>` (components/imageGrid.vue)
 - `<MainHeader>` | `<main-header>` (components/mainHeader.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Preisliste>` | `<preisliste>` (components/preisliste.vue)
