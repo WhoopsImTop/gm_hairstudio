@@ -4,48 +4,71 @@
 
     <div class="image-text-row">
       <div class="img-col">
-        <div class="mo">
-          <img src="img/mo.png" alt="Mohammad" />
-          <div class="hovercontent">
-            <p>
-              <strong>Spitzname: Mo</strong><br /><br />
-              Ich bin seit dem 14. Lebensjahr begeistert davon was ein
-              Haarschnitt ausmachen kann, Meine besonderen Fähigkeiten habe ich
-              im Herren / Barberbereich . Mich begeistern Klassische wie auch
-              moderne und ausgefallene . Qualität statt Quantität wird bei mir
-              großgeschrieben!
-            </p>
-          </div>
-        </div>
-        <div class="guelsi">
-          <img src="img/gülsi.png" alt="Gülsi" />
-          <div class="hovercontent">
-            <p>
-              <strong>Spitzname: Gülsi</strong><br /><br />
-              Meine Stärken liegen darin, meiner Kreativität im Colour Bereich
-              freien Lauf zu lassen. Klassische Strähnen, Farbveredelungen,
-              Farbkorrekturen, Extensions, Stylings oder aufwendige Balayge
-              Techniken gehören zu meinem Alltag,den ich mit bravur bewältige.
-              Meine Liebe ins Detail sorgt für individuelle Looks, die dich zum
-              strahlen bringen.
-            </p>
-          </div>
-        </div>
-        <img src="img/logo_about.svg" alt="logo" class="logo-img" />
+        <img src="img/about.webp" alt="about" />
       </div>
       <div class="text-col">
         <p>
-          Wir sind Gülseren und Mohammad, Diplom Coloristin und Friseurmeister.
-          Wir werden Ihnen den perfekten, auf ihre Wünsche angepassten Look
-          bieten.
+          Unter dem Aspekt "stilvoll - zeitlos - modern" werden Sie bei uns
+          individuell und typgerecht beraten! Wir sind Gülseren und Mohammad,
+          Haare sind unsere Leidenschaft. Wir werden Ihnen den perfekten, auf
+          ihre wünsche angepassten Haarschnitt bieten.
         </p>
+        <div class="about-box" @click="moActive = !moActive" :class="moActive ? '' : 'collapsed'">
+          <div class="about-box-heading">
+            <div>
+              <p class="name hightlight">Mohammad Hackla</p>
+              <p class="position">Frisörmeister</p>
+            </div>
+            <img
+              src="img/toggle-btn.svg"
+              style="width: 25px"
+              alt="toggle-btn"
+            />
+          </div>
+          <p>
+            Ich bin seit dem 14. Lebensjahr begeistert davon was ein Haarschnitt
+            ausmachen kann, Meine besonderen Fähigkeiten habe ich im Herren /
+            Barberbereich. Mich begeistern Klassische wie auch moderne und
+            ausgefallene. <br />
+            Qualität statt Quantität wird bei mir großgeschrieben!
+          </p>
+        </div>
+        <div class="about-box" @click="guelsiActive = !guelsiActive" :class="guelsiActive ? '' : 'collapsed'">
+          <div class="about-box-heading">
+            <div>
+              <p class="name hightlight">Gülseren Maria Martines</p>
+              <p class="position">Diplome Coloristin</p>
+            </div>
+            <img
+              src="img/toggle-btn.svg"
+              style="width: 25px"
+              alt="toggle-btn"
+            />
+          </div>
+          <p>
+            Meine Stärken liegen darin, meiner Kreativität im Colour Bereich
+            freien Lauf zu lassen. Klassische Strähnen, Farbveredelungen,
+            Farbkorrekturen, Extensions, Stylings oder aufwendige Balayge
+            Techniken gehören zu meinem Alltag,den ich mit bravur bewältige.<br />
+            Meine Liebe ins Detail sorgt für individuelle Looks, die dich zum
+            strahlen bringen.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "AboutUs",
+  data() {
+    return {
+      moActive: false,
+      guelsiActive: false,
+    };
+  },
+};
 </script>
 
 <style>
@@ -65,99 +88,52 @@ export default {};
   object-fit: cover;
 }
 
-.image-text-row p {
+.image-text-row {
   text-align: left;
+}
+
+.text-col {
   padding: 0 40px;
+  text-align: left;
 }
 
-.img-col {
-  position: relative;
-  min-width: 700px;
-  width: 50%;
-  height: 500px;
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.mo {
-  border-top-left-radius: 170px;
-  border-top-right-radius: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.hovercontent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: 0.5s ease;
-  padding: 10px 0;
-  display: flex;
-  align-items: flex-end;
-}
-
-.guelsi .hovercontent {
-  align-items: center;
-}
-
-.mo:hover .hovercontent,
-.guelsi:hover .hovercontent {
-  opacity: 1;
-  z-index: 999;
-}
-
-.hovercontent p {
-  color: #fff !important;
+.position {
   font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.mo img,
-.guelsi img {
-  width: 320px;
-  object-fit: cover;
+.about-box {
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 20px 0;
 }
 
-.guelsi {
-  border-bottom-left-radius: 170px;
-  border-bottom-right-radius: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-box.collapsed {
+  max-height: 80px;
   overflow: hidden;
-  position: absolute;
-  top: 0px;
-  right: 0px;
 }
 
-.about-us-content .logo-img {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
+.about-box-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
-.about-us-content img.logo-img {
-  width: 250px;
+.about-box-heading img {
+  margin: 0;
 }
-
-/* .person-1 {
-  position: absolute;
-  bottom: -70px;
-  left: 130px;
-}
-
-.person-2 {
-  position: absolute;
-  bottom: -70px;
-  right: 140px;
-} */
 
 @media (max-width: 1200px) {
   .image-text-row {
@@ -171,23 +147,6 @@ export default {};
   .image-text-row p {
     margin-top: 50px;
     padding: 0;
-  }
-}
-
-@media (max-width: 775px) {
-  .img-col {
-    min-width: unset;
-    width: 100%;
-    height: 250px;
-  }
-
-  .mo img,
-  .guelsi img {
-    width: 140px;
-    object-fit: cover;
-  }
-  .about-us-content img.logo-img {
-    width: 150px;
   }
 }
 </style>
