@@ -174,7 +174,7 @@ export default {
               Dauer: "30 Min",
             },
             {
-              Leistung: "Ansatzstähnen Halber Kopf",
+              Leistung: "Ansatzsträhnen Halber Kopf",
               Leistungsgruppe: "Farben & Strähnen ",
               Abkürzung: "AnsHK",
               Preis: "75",
@@ -182,7 +182,7 @@ export default {
               Dauer: "45 Min",
             },
             {
-              Leistung: "Ansatzstähnen Ganzer Kopf",
+              Leistung: "Ansatzsträhnen Ganzer Kopf",
               Leistungsgruppe: "Farben & Strähnen ",
               Abkürzung: "AnsGk",
               Preis: "85",
