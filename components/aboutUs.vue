@@ -20,7 +20,7 @@
         >
           <div class="about-box-heading">
             <div>
-              <p class="name hightlight">Mohammad Hackla</p>
+              <p class="name hightlight">Mohammad Hakla</p>
               <p class="position">Frisörmeister</p>
             </div>
             <img
@@ -30,10 +30,10 @@
             />
           </div>
           <p class="about-text">
-            Ich bin seit dem 14. Lebensjahr begeistert davon was ein Haarschnitt
+            Ich bin seit dem 14. Lebensjahr begeistert davon, was ein Haarschnitt
             ausmachen kann, Meine besonderen Fähigkeiten habe ich im Herren /
-            Barberbereich. Mich begeistern Klassische wie auch moderne und
-            ausgefallene. <br />
+            Barberbereich. Mich begeistern klassische wie auch moderne und
+            ausgefallene Frisuren. <br />
             Qualität statt Quantität wird bei mir großgeschrieben!
           </p>
         </div>
@@ -56,10 +56,10 @@
           <p class="about-text">
             Meine Stärken liegen darin, meiner Kreativität im Colour Bereich
             freien Lauf zu lassen. Klassische Strähnen, Farbveredelungen,
-            Farbkorrekturen, Extensions, Stylings oder aufwendige Balayge
-            Techniken gehören zu meinem Alltag,den ich mit bravur bewältige.<br />
-            Meine Liebe ins Detail sorgt für individuelle Looks, die dich zum
-            strahlen bringen.
+            Farbkorrekturen, Extensions, Stylings oder aufwendige Balayage
+            Techniken gehören zu meinem Alltag,den ich mit Bravour bewältige.<br />
+            Meine Liebe zum Detail sorgt für individuelle Looks, die dich zum
+            Strahlen bringen.
           </p>
         </div>
       </div>

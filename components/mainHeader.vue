@@ -8,13 +8,13 @@
       <p class="landing-content">
         Herzlich Willkommen bei GM Professional Hairstudio. <br />
         <span class="hightlight">
-          Wir laden Dich ein, unser einzigartiges Ambiente in Freiburg am
-          Güterbahnhof kennenzulernen. Als geschultes Team verleihen wir dir den
-          LOOK der zu dir passt.</span
+          Wir laden Sie ein, unser einzigartiges Ambiente in Freiburg am
+          Güterbahnhof kennenzulernen. Als geschultes Team verleihen wir Ihnen den
+          LOOK der zu Ihnen passt.</span
         >
         Wir sind Detailverliebt, und legen großen Wert auf typgerechte,
         individuelle Beratung. Sie sind sich noch unsicher? <br />
-        Buche jetzt einen Termin und verschaffe dir dein eigenes Bild.
+        Buchen Sie jetzt einen Termin und verschaffe Sie sich ihr eigenes Bild.
       </p>
       <nuxt-link class="button" to="/#unsere-preise">Unser Angebot</nuxt-link>
     </div>
