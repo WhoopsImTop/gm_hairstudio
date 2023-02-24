@@ -24,6 +24,7 @@
             >Über uns</nuxt-link
           >
           <nuxt-link class="nav-link" to="/#unsere-preise" @click="active = false">Preise</nuxt-link>
+          <a class="nav-link" href="https://www.studiobookr.com/en/VoucherRequests/studio-67752">Gutschein kaufen</a>
           <a class="nav-link button" href="https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA">Termin Buchen</a>
         </div>
       </div>
