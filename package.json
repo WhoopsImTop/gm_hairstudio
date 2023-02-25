@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && nuxt",
+    "dev": "nuxt",
     "dev-old": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
+    "generate": "export NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
