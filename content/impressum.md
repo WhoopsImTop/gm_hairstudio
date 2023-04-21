@@ -9,7 +9,7 @@ Ellen-Gottlieb-Stra&szlig;e 15<br />
 79106 Freiburg</p>
 
 <h2>Kontakt</h2>
-<p>Telefon: 015233592058<br />
+<p>Telefon: 0761 51463046<br />
 E-Mail: info@gmhairstudio.de</p>
 
 <h2>Redaktionell verantwortlich</h2>
