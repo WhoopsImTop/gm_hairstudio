@@ -14,6 +14,9 @@
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
+  "GoogleReviews": {
+    "description": "Auto imported from components/googleReviews.vue"
+  },
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },

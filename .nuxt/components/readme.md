@@ -11,6 +11,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Divider>` | `<divider>` (components/divider.vue)
 - `<EliasEnglenLogo>` | `<elias-englen-logo>` (components/EliasEnglenLogo.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
+- `<GoogleReviews>` | `<google-reviews>` (components/googleReviews.vue)
 - `<Header>` | `<header>` (components/Header.vue)
 - `<ImageGrid>` | `<image-grid>` (components/imageGrid.vue)
 - `<MainHeader>` | `<main-header>` (components/mainHeader.vue)

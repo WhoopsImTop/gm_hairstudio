@@ -5,6 +5,7 @@
       <divider></divider>
       <about-us id="ueber-uns"></about-us>
       <image-grid id="image-grid"></image-grid>
+      <google-reviews id="google-reviews" :reviews="reviews"></google-reviews>
       <unsere-preise id="unsere-preise"></unsere-preise>
     </div>
     <unsere-produkte id="unsere-produkte"></unsere-produkte>
@@ -17,7 +18,7 @@ import Divider from "../components/divider.vue";
 import AboutUs from "../components/aboutUs.vue";
 import UnserePreise from "../components/unserePreise.vue";
 import UnsereProdukte from "../components/unsereProdukte.vue";
-import ImageGrid from '../components/imageGrid.vue';
+import GoogleReviews from "../components/googleReviews.vue";
 export default {
   layout: "main",
   components: {
@@ -26,7 +27,7 @@ export default {
     AboutUs,
     UnserePreise,
     UnsereProdukte,
-    ImageGrid,
+    GoogleReviews,
   },
   data: () => {
     return {};
@@ -46,6 +47,11 @@ export default {
         url: window.location.href,
       });
     },
+  },
+  async asyncData({ $content }) {
+    const reviews = await $content("googleReviews").fetch();
+    console.log(reviews);
+    return { reviews };
   },
 };
 </script>
