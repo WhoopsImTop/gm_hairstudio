@@ -21,6 +21,12 @@ import UnsereProdukte from "../components/unsereProdukte.vue";
 import GoogleReviews from "../components/googleReviews.vue";
 export default {
   layout: "main",
+  head() {
+    return {
+      title: "GM Professional Hairstudio - Ihr Friseur in Freiburg",
+      description: "GM Professional Hairstudio - Ihr Friseur in Freiburg. Wir bieten Ihnen eine Vielzahl an Dienstleistungen rund um das Thema Haare.",
+    };
+  },
   components: {
     MainHeader,
     Divider,
@@ -31,22 +37,6 @@ export default {
   },
   data: () => {
     return {};
-  },
-  methods: {
-    async generate(title, subtitle, menu, showWeekDays) {
-      await this.$store.commit("setLoading", true);
-      let newMenu = menu;
-      (await newMenu.title) ? (title = menu.title) : (title = title);
-      await this.generatePDF(title, subtitle, newMenu, showWeekDays, true);
-      await this.$store.commit("setLoading", false);
-    },
-    async share(menu) {
-      await navigator.share({
-        title: `Kost|bar Waldkirch | ${menu.title}`,
-        text: `Hey, schau dir jetzt das Menü "${menu.title}" von der Kost|bar Waldkirch an.`,
-        url: window.location.href,
-      });
-    },
   },
   async asyncData({ $content }) {
     const reviews = await $content("googleReviews").fetch();
