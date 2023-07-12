@@ -8,7 +8,8 @@ export default {
     htmlAttrs: {
       lang: "de",
     },
-    title: "GM Professional Hairstudio",
+    title:
+      "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -16,8 +17,43 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "GM Professional Hairstudio - Ihr Friseur in Freiburg. Wir bieten Ihnen eine Vielzahl an Dienstleistungen rund um das Thema Haare.",
+          "Besuchen Sie den stilvollen und modernen GM Professional Hairstudio im Güterbahnhof von Freiburg. Unsere professionell ausgebildeten Friseure erfüllen jeden Kundenwunsch.",
       },
+      { property: "og:type", content: "website" },
+      {
+        property: "og:title",
+        content:
+          "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+      },
+      {
+        property: "og:description",
+        content:
+          "Besuchen Sie den stilvollen und modernen GM Professional Hairstudio im Güterbahnhof von Freiburg. Unsere professionell ausgebildeten Friseure erfüllen jeden Kundenwunsch.",
+      },
+      { property: "og:url", content: "https://www.gmhairstudio.de/" },
+      {
+        property: "og:image",
+        content: "https://www.gmhairstudio.de/images/logo.jpg",
+      },
+      { property: "og:image:alt", content: "GM Professional Hairstudio Logo" },
+      { property: "og:site_name", content: "GM Professional Hairstudio" },
+      { property: "og:locale", content: "de_DE" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content:
+          "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Besuchen Sie den stilvollen und modernen GM Professional Hairstudio im Güterbahnhof von Freiburg. Unsere professionell ausgebildeten Friseure erfüllen jeden Kundenwunsch.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://www.gmhairstudio.de/images/logo.jpg",
+      },
+      { name: "twitter:image:alt", content: "GM Professional Hairstudio Logo" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "img/favicon.png" }],
   },
@@ -66,8 +102,7 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {    
-  },
+  content: {},
 
   generate: {
     dir: "public",

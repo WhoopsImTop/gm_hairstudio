@@ -23,8 +23,10 @@ export default {
   layout: "main",
   head() {
     return {
-      title: "GM Professional Hairstudio - Ihr Friseur in Freiburg",
-      description: "GM Professional Hairstudio - Ihr Friseur in Freiburg. Wir bieten Ihnen eine Vielzahl an Dienstleistungen rund um das Thema Haare.",
+      title:
+        "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+      description:
+        "Besuchen Sie den stilvollen und modernen GM Professional Hairstudio im Güterbahnhof von Freiburg. Unsere professionell ausgebildeten Friseure erfüllen jeden Kundenwunsch.",
     };
   },
   components: {
