@@ -21,14 +21,6 @@ import UnsereProdukte from "../components/unsereProdukte.vue";
 import GoogleReviews from "../components/googleReviews.vue";
 export default {
   layout: "main",
-  head() {
-    return {
-      title:
-        "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
-      description:
-        "Besuchen Sie den stilvollen und modernen GM Professional Hairstudio im Güterbahnhof von Freiburg. Unsere professionell ausgebildeten Friseure erfüllen jeden Kundenwunsch.",
-    };
-  },
   components: {
     MainHeader,
     Divider,
