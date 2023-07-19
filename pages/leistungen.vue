@@ -11,7 +11,7 @@
       >
     </h4>
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>DAMENHAARSCHNITT & STYLING</h2>
     </div>
     <p>
@@ -33,7 +33,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>COLORATION & STRÄHNEN</h2>
     </div>
     <p>
@@ -58,7 +58,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>HAARVERLÄNGERUNG & SONSTIGE ANWENDUNGEN</h2>
     </div>
     <p>
@@ -76,7 +76,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>KOSMETISCHE BEHANDLUNGEN</h2>
     </div>
     <p>
@@ -94,7 +94,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>HERRENHAARSCHNITT & BARTPFLEGE</h2>
     </div>
     <p>
@@ -111,7 +111,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>BARTPFLEGE</h2>
     </div>
     <p>
@@ -129,7 +129,7 @@
     </ul>
 
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="/img/cut.svg" alt="cut" />
       <h2>KOMBI PAKET</h2>
     </div>
     <p>
@@ -161,6 +161,43 @@ export default {
           content:
             "Unsere Damen-Schnitt und Styling-Services bieten Ihnen das perfekte Styling für jeden Anlass. Ob Sie eine klassische Kurzhaarfrisur oder eine aufwendige Langhaarfrisur wünschen, wir sind für Sie da!",
         },
+      ],
+    };
+  },
+
+  jsonld() {
+    return {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "GM Professional Hairstudio",
+      image: "https://gmhairstudio.de/img/logo.svg",
+      "@id": "",
+      url: "https://gmhairstudio.de",
+      telephone: "+49 761 51463046",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Ellen-Gottlieb-Straße 15",
+        addressLocality: "Güterbahnhof, Freiburg im Breisgau",
+        postalCode: "79106",
+        addressCountry: "DE",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 48.014648,
+        longitude: 7.848021,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "09:00",
+          closes: "19:00",
+        },
+      ],
+      sameAs: [
+        "https://www.facebook.com/gm.professional.hairstudio",
+        "https://www.instagram.com/gm.professional.hairstudio/",
+        "https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
       ],
     };
   },

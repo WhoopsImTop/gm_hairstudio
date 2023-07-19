@@ -64,14 +64,14 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "img/favicon.png" },
-      { rel: "canonical", href: "https://www.gmhairstudio.de/" },
+      { rel: "canonical", href: "https://gmhairstudio.de/" },
     ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/jsonld'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
