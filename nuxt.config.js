@@ -9,7 +9,7 @@ export default {
       lang: "de",
     },
     title:
-      "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+      "GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -23,7 +23,7 @@ export default {
       {
         property: "og:title",
         content:
-          "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+          "GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon",
       },
       {
         property: "og:description",
@@ -42,7 +42,7 @@ export default {
       {
         name: "twitter:title",
         content:
-          "GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau",
+          "GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon",
       },
       {
         name: "twitter:description",
