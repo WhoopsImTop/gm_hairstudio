@@ -1,9 +1,12 @@
 <template>
   <div class="navigation-background">
     <div class="navigation-content-container">
-      <nuxt-link to="/"
-        >
-        <img class="logo-img" src="/img/logo.svg" alt="GM Professional Hairstudio" />
+      <nuxt-link to="/">
+        <img
+          class="logo-img"
+          src="/img/logo.svg"
+          alt="GM Professional Hairstudio"
+        />
       </nuxt-link>
       <div
         class="burger"
@@ -14,18 +17,55 @@
         <div class="line-2"></div>
         <div class="line-3"></div>
       </div>
-      <div
-        class="navigation-content"
-        :class="active ? 'active' : ''"
-      >
+      <div class="navigation-content" :class="active ? 'active' : ''">
         <div class="nav-links">
-          <nuxt-link class="nav-link" to="/" @click="active = false">Startseite</nuxt-link>
+          <!-- <div class="dropdown">
+            <nuxt-link class="nav-link" to="/#leistungen"
+              >Leistungen</nuxt-link
+            >
+            <div class="dropdown-content">
+              <nuxt-link
+                class="nav-link thin"
+                to="/damen"
+                @click="active = false"
+                >Damen</nuxt-link
+              >
+              <nuxt-link
+                class="nav-link thin"
+                to="/herren"
+                @click="active = false"
+                >Herren</nuxt-link
+              >
+              <nuxt-link
+                class="nav-link thin"
+                to="/schulungen"
+                @click="active = false"
+                >Schulungen</nuxt-link
+              >
+            </div>
+          </div> -->
+          <nuxt-link class="nav-link" to="/#unsere-preise" @click="active = false"
+            >Preise</nuxt-link
+          >
           <nuxt-link class="nav-link" to="/#ueber-uns" @click="active = false"
             >Über uns</nuxt-link
           >
-          <nuxt-link class="nav-link" to="/#unsere-preise" @click="active = false">Preise</nuxt-link>
-          <a class="nav-link" href="https://www.studiobookr.com/VoucherOrders/gm-professional-hairstudio-67752">Gutschein kaufen</a>
-          <a class="nav-link button" href="https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA">Termin Buchen</a>
+          <nuxt-link
+            class="nav-link"
+            to="/jobs"
+            @click="active = false"
+            >Jobs</nuxt-link
+          >
+          <a
+            class="nav-link"
+            href="https://www.studiobookr.com/VoucherOrders/gm-professional-hairstudio-67752"
+            >Gutscheine</a
+          >
+          <a
+            class="nav-link button"
+            href="https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA"
+            >Termin Buchen</a
+          >
         </div>
       </div>
     </div>
@@ -112,6 +152,33 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--menu-bg-color);
+  padding: 5px 0px;
+  border-radius: 10px;
+  border: 1px solid var(--orange-color);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  color: var(--orange-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 1349px) {

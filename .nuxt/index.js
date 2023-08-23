@@ -13,11 +13,11 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_0098d939 from 'nuxt_plugin_plugin_0098d939' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_markdownit_bed8edbc from 'nuxt_plugin_markdownit_bed8edbc' // Source: .\\markdownit.js (mode: 'all')
-import nuxt_plugin_pluginclient_7108f56f from 'nuxt_plugin_pluginclient_7108f56f' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_527b3212 from 'nuxt_plugin_pluginserver_527b3212' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_cfacca48 from 'nuxt_plugin_axios_cfacca48' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_62f354e3 from 'nuxt_plugin_plugin_62f354e3' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_markdownit_c0630e90 from 'nuxt_plugin_markdownit_c0630e90' // Source: .\\markdownit.js (mode: 'all')
+import nuxt_plugin_pluginclient_35ece7ce from 'nuxt_plugin_pluginclient_35ece7ce' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_4ac2fda1 from 'nuxt_plugin_pluginserver_4ac2fda1' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_0af0c586 from 'nuxt_plugin_axios_0af0c586' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_jsonld_593ee954 from 'nuxt_plugin_jsonld_593ee954' // Source: ..\\plugins\\jsonld (mode: 'all')
 
 // Component: <ClientOnly>
@@ -83,7 +83,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"htmlAttrs":{"lang":"de"},"title":"GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"property":"og:type","content":"website"},{"property":"og:title","content":"GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau"},{"property":"og:description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"property":"og:url","content":"https:\u002F\u002Fwww.gmhairstudio.de\u002F"},{"property":"og:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"property":"og:image:alt","content":"GM Professional Hairstudio Logo"},{"property":"og:site_name","content":"GM Professional Hairstudio"},{"property":"og:locale","content":"de_DE"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"GM Professional Hairstudio - Der Bestbewerteste Salon in Freiburg im Breisgau"},{"name":"twitter:description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"name":"twitter:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"name":"twitter:image:alt","content":"GM Professional Hairstudio Logo"},{"name":"robots","content":"index, follow"},{"name":"googlebot","content":"index, follow"},{"name":"keywords","content":"friseur, friseursalon, haarschnitt, coloration, balayage, highlights, dauerhafte welle, färben, schneiden, föhnen, styling, freiburg im breisgau, gm professional hairstudio, gülseren, mo, barber, güterbahnhof"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"img\u002Ffavicon.png"},{"rel":"canonical","href":"https:\u002F\u002Fgmhairstudio.de\u002F"}],"style":[],"script":[]},
+    head: {"htmlAttrs":{"lang":"de"},"title":"GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"property":"og:type","content":"website"},{"property":"og:title","content":"GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon"},{"property":"og:description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"property":"og:url","content":"https:\u002F\u002Fwww.gmhairstudio.de\u002F"},{"property":"og:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"property":"og:image:alt","content":"GM Professional Hairstudio Logo"},{"property":"og:site_name","content":"GM Professional Hairstudio"},{"property":"og:locale","content":"de_DE"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon"},{"name":"twitter:description","content":"GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!"},{"name":"twitter:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"name":"twitter:image:alt","content":"GM Professional Hairstudio Logo"},{"name":"robots","content":"index, follow"},{"name":"googlebot","content":"index, follow"},{"name":"keywords","content":"friseur, friseursalon, haarschnitt, coloration, balayage, highlights, dauerhafte welle, färben, schneiden, föhnen, styling, freiburg im breisgau, gm professional hairstudio, gülseren, mo, barber, güterbahnhof"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"img\u002Ffavicon.png"},{"rel":"canonical","href":"https:\u002F\u002Fgmhairstudio.de\u002F"}],"style":[],"script":[]},
 
     store,
     router,
@@ -212,24 +212,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_0098d939 === 'function') {
-    await nuxt_plugin_plugin_0098d939(app.context, inject)
+  if (typeof nuxt_plugin_plugin_62f354e3 === 'function') {
+    await nuxt_plugin_plugin_62f354e3(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_markdownit_bed8edbc === 'function') {
-    await nuxt_plugin_markdownit_bed8edbc(app.context, inject)
+  if (typeof nuxt_plugin_markdownit_c0630e90 === 'function') {
+    await nuxt_plugin_markdownit_c0630e90(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_7108f56f === 'function') {
-    await nuxt_plugin_pluginclient_7108f56f(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_35ece7ce === 'function') {
+    await nuxt_plugin_pluginclient_35ece7ce(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_527b3212 === 'function') {
-    await nuxt_plugin_pluginserver_527b3212(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_4ac2fda1 === 'function') {
+    await nuxt_plugin_pluginserver_4ac2fda1(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_cfacca48 === 'function') {
-    await nuxt_plugin_axios_cfacca48(app.context, inject)
+  if (typeof nuxt_plugin_axios_0af0c586 === 'function') {
+    await nuxt_plugin_axios_0af0c586(app.context, inject)
   }
 
   if (typeof nuxt_plugin_jsonld_593ee954 === 'function') {

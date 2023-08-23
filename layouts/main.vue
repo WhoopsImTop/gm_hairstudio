@@ -10,11 +10,26 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import BookingBtn from '../components/bookingBtn.vue';
+import BookingBtn from "../components/bookingBtn.vue";
+import Lenis from '@studio-freight/lenis'
 export default {
   components: {
     Header,
     Footer,
+  },
+  mounted() {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
   },
 };
 </script>,
