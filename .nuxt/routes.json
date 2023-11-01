@@ -2,39 +2,39 @@
   {
     "name": "jobs",
     "path": "/jobs",
-    "component": "C:\\\\Users\\\\info\\\\Documents\\\\gm_hairstudio\\\\pages\\\\jobs\\\\index.vue",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\index.vue",
     "chunkName": "pages/jobs/index",
     "url": "/jobs",
-    "_name": "_07ceacd2"
+    "_name": "_1f26210a"
   },
   {
     "name": "leistungen",
     "path": "/leistungen",
-    "component": "C:\\\\Users\\\\info\\\\Documents\\\\gm_hairstudio\\\\pages\\\\leistungen.vue",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen.vue",
     "chunkName": "pages/leistungen",
     "url": "/leistungen",
-    "_name": "_2ddb3420"
+    "_name": "_602858e8"
   },
   {
     "name": "jobs-slug",
     "path": "/jobs/:slug",
-    "component": "C:\\\\Users\\\\info\\\\Documents\\\\gm_hairstudio\\\\pages\\\\jobs\\\\_slug.vue",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\_slug.vue",
     "chunkName": "pages/jobs/_slug",
-    "_name": "_06180b8a"
+    "_name": "_1d6f7fc2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\info\\\\Documents\\\\gm_hairstudio\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "url": "/",
-    "_name": "_2fa42630"
+    "_name": "_625eeb20"
   },
   {
     "name": "slug",
     "path": "/:slug",
-    "component": "C:\\\\Users\\\\info\\\\Documents\\\\gm_hairstudio\\\\pages\\\\_slug.vue",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\_slug.vue",
     "chunkName": "pages/_slug",
-    "_name": "_331168c0"
+    "_name": "_60a849d8"
   }
 ]

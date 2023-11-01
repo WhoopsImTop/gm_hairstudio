@@ -4,7 +4,7 @@
 
     <div class="image-text-row">
       <div class="img-col">
-        <img src="img/about.webp" alt="about" />
+        <img src="img/gm_hairstudio_about.webp" alt="about" />
       </div>
       <div class="text-col">
         <p>
@@ -24,7 +24,7 @@
               <p class="position">Frisörmeister</p>
             </div>
             <img
-              src="img/toggle-btn.svg"
+              src="img/gm_hairstudio_toggle-btn.svg"
               style="width: 25px"
               alt="toggle-btn"
             />
@@ -48,7 +48,7 @@
               <p class="position">Diplome Coloristin</p>
             </div>
             <img
-              src="img/toggle-btn.svg"
+              src="img/gm_hairstudio_toggle-btn.svg"
               style="width: 25px"
               alt="toggle-btn"
             />

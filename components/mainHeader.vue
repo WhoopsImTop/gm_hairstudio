@@ -18,8 +18,8 @@
       </p>
       <nuxt-link class="button" to="/#unsere-preise">Unser Angebot</nuxt-link>
     </div>
-    <img class="headerImg left" src="/img/men.jpeg" alt="Haare" />
-    <img class="headerImg right" src="/img/woman.jpeg" alt="Haare" />
+    <img class="headerImg left" src="/img/gm_hairstudio_men.jpeg" alt="Haare" />
+    <img class="headerImg right" src="/img/gm_hairstudio_woman.jpeg" alt="Haare" />
   </div>
 </template>
 

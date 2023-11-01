@@ -4,8 +4,8 @@
     target="_blank"
     class="booking-btn"
   >
-    <img class="booking-rotation" src="/img/btn-text.svg" alt="booking-btn" />
-    <img class="booking-ticket" src="/img/ticket.svg" alt="ticket"
+    <img class="booking-rotation" src="/img/gm_hairstudio_btn-text.svg" alt="booking-btn" />
+    <img class="booking-ticket" src="/img/gm_hairstudio_ticket.svg" alt="ticket"
   /></a>
 </template>
 

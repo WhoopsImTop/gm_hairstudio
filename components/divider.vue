@@ -1,6 +1,6 @@
 <template>
   <div class="divider">
-    <img src="img/cut.svg" alt="cut">
+    <img src="img/gm_hairstudio_cut.svg" alt="cut">
     <hr class="dashed-line">
   </div>
 </template>

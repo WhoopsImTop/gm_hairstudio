@@ -10,13 +10,13 @@
               <img
                 v-for="star in review.rating"
                 :key="star"
-                src="/img/star.svg"
+                src="/img/gm_hairstudio_star.svg"
                 width="20"
                 alt="stern"
               />
             </div>
           </div>
-          <img src="/img/google_icon.png" width="30" height="30" alt="google" />
+          <img src="/img/gm_hairstudio_google_icon.png" width="30" height="30" alt="google" />
         </div>
         <div class="reviewContent" :class="showContent ? 'open' : 'closed'">
           <p>{{ review.comment }}</p>

@@ -4,7 +4,7 @@
       <nuxt-link to="/">
         <img
           class="logo-img"
-          src="/img/logo.svg"
+          src="/img/gm_hairstudio_logo.svg"
           alt="GM Professional Hairstudio"
         />
       </nuxt-link>

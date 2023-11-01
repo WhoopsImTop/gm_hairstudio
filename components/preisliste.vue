@@ -1,7 +1,7 @@
 <template>
   <div class="preisliste">
     <div class="preisliste-header">
-      <img src="img/cut.svg" alt="cut" />
+      <img src="img/gm_hairstudio_cut.svg" alt="cut" />
       <h2>{{ preisliste.Titel }}</h2>
     </div>
     <div class="preisliste-content">
@@ -18,9 +18,9 @@
           <p v-if="item.Leistungsgruppe" class="preisliste-item-subtitle">
             {{ item.Leistungsgruppe }}
           </p>
-          <hr v-if="parseInt(item.Preis)" class="price-dashed-line" />
+          <hr v-if="item.Preis" class="price-dashed-line" />
           <span class="preisliste-item-price">{{
-            parseInt(item.Preis) ? item.Preis + ".00 €" : ""
+            item.Preis
           }}</span>
         </div>
       </div>
@@ -31,6 +31,9 @@
 <script>
 export default {
   props: ["preisliste"],
+
+  methods: {
+  },
 };
 </script>
 
@@ -106,12 +109,26 @@ export default {
 }
 
 @media (max-width: 1000px) {
+  .preisliste-item-content {
+    align-items: flex-end;
+  }
   .preisliste-header h2 {
     line-height: 1.5rem;
   }
   .preisliste-item-header h3 {
     font-size: 1rem;
     line-height: 1.3rem;
+  }
+  .preisliste-item-subtitle {
+    min-width: unset;
+    line-break: normal;
+    max-width: 60%;
+    width: 100%;
+    /* dynamic width */
+    flex-shrink: 0;
+  }
+  .price-dashed-line {
+    flex-shrink: 1;
   }
 }
 </style>
