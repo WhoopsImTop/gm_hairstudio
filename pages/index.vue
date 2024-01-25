@@ -33,33 +33,46 @@ export default {
     return {};
   },
 
-  jsonld() {
+  head() {
     return {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "GM Professional Hairstudio",
-      image: "https://gmhairstudio.de/img/logo.svg",
-      "@id": "",
-      url: "https://gmhairstudio.de",
-      telephone: "+49 761 51463046",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Ellen-Gottlieb-Straße 15",
-        addressLocality: "Güterbahnhof, Freiburg im Breisgau",
-        postalCode: "79106",
-        addressCountry: "DE",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 48.014648,
-        longitude: 7.848021,
-      },
-      openingHoursSpecification: [
+      script: [
         {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          opens: "09:00",
-          closes: "19:00",
+          type: "application/ld+json",
+          json: {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "GM Professional Hairstudio",
+            image: "https://gmhairstudio.de/img/logo.svg",
+            "@id": "https://gmhairstudio.de", // ID angepasst zur URL
+            url: "https://gmhairstudio.de",
+            telephone: "+49 761 51463046",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Ellen-Gottlieb-Straße 15",
+              addressLocality: "Güterbahnhof, Freiburg im Breisgau",
+              postalCode: "79106",
+              addressCountry: "DE",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 48.014648,
+              longitude: 7.848021,
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "09:00",
+                closes: "19:00",
+              },
+            ],
+          },
         },
       ],
     };

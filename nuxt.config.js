@@ -64,7 +64,6 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "img/favicon.png" },
-      { rel: "canonical", href: "https://gmhairstudio.de/" },
     ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
