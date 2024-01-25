@@ -153,13 +153,19 @@ export default {
   layout: "main",
   head() {
     return {
-      title: "Leistungen",
+      title: "Leistungen - GM Professional Hairstudio in Freiburg",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "Unsere Damen-Schnitt und Styling-Services bieten Ihnen das perfekte Styling für jeden Anlass. Ob Sie eine klassische Kurzhaarfrisur oder eine aufwendige Langhaarfrisur wünschen, wir sind für Sie da!",
+            "Entdecken Sie erstklassige Herren- und Damenhaarschnitte bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg. Unsere Leistungen umfassen individuell angepasste Haarschnitte, die neuesten Trends und traditionelle Stile. Besuchen Sie uns in Freiburg für ein unvergleichliches Haarstyling-Erlebnis, das Ihre Erwartungen übertrifft. Perfektion in jedem Schnitt – nur bei Ihrem Experten-Friseur in Freiburg.",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "Friseur, Friseur Freiburg, Friseur in Freiburg, Friseur Freiburg im Breisgau, Friseur Freiburg Güterbahnhof, Friseur Freiburg Leistungen",
         },
       ],
     };
@@ -189,7 +195,14 @@ export default {
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ],
           opens: "09:00",
           closes: "19:00",
         },
@@ -197,7 +210,7 @@ export default {
       sameAs: [
         "https://www.facebook.com/gm.professional.hairstudio",
         "https://www.instagram.com/gm.professional.hairstudio/",
-        "https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
+        "https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/",
       ],
     };
   },

@@ -1,4 +1,16 @@
 {
+  "EliasEnglenLogo": {
+    "description": "Auto imported from components/EliasEnglenLogo.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
   "AboutUs": {
     "description": "Auto imported from components/aboutUs.vue"
   },
@@ -8,26 +20,14 @@
   "Divider": {
     "description": "Auto imported from components/divider.vue"
   },
-  "EliasEnglenLogo": {
-    "description": "Auto imported from components/EliasEnglenLogo.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer.vue"
-  },
   "GoogleReviews": {
     "description": "Auto imported from components/googleReviews.vue"
-  },
-  "Header": {
-    "description": "Auto imported from components/Header.vue"
   },
   "ImageGrid": {
     "description": "Auto imported from components/imageGrid.vue"
   },
   "MainHeader": {
     "description": "Auto imported from components/mainHeader.vue"
-  },
-  "NuxtLogo": {
-    "description": "Auto imported from components/NuxtLogo.vue"
   },
   "Preisliste": {
     "description": "Auto imported from components/preisliste.vue"

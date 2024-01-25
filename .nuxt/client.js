@@ -229,7 +229,7 @@ function resolveComponents (route) {
   })
 }
 
-function callMiddleware (Components, context, layout) {
+function callMiddleware (Components, context, layout, renderState) {
   let midd = []
   let unknownMiddleware = false
 
@@ -261,10 +261,10 @@ function callMiddleware (Components, context, layout) {
   if (unknownMiddleware) {
     return
   }
-  return middlewareSeries(midd, context)
+  return middlewareSeries(midd, context, renderState)
 }
 
-async function render (to, from, next) {
+async function render (to, from, next, renderState) {
   if (this._routeChanged === false && this._paramChanged === false && this._queryChanged === false) {
     return next()
   }
@@ -303,6 +303,12 @@ async function render (to, from, next) {
   await setContext(app, {
     route: to,
     from,
+    error: (err) => {
+      if (renderState.aborted) {
+        return
+      }
+      app.nuxt.error.call(this, err)
+    },
     next: _next.bind(this)
   })
   this._dateLastError = app.nuxt.dateErr
@@ -315,8 +321,12 @@ async function render (to, from, next) {
   // If no Components matched, generate 404
   if (!Components.length) {
     // Default layout
-    await callMiddleware.call(this, Components, app.context)
+    await callMiddleware.call(this, Components, app.context, undefined, renderState)
     if (nextCalled) {
+      return
+    }
+    if (renderState.aborted) {
+      next(false)
       return
     }
 
@@ -328,8 +338,12 @@ async function render (to, from, next) {
         : errorLayout
     )
 
-    await callMiddleware.call(this, Components, app.context, layout)
+    await callMiddleware.call(this, Components, app.context, layout, renderState)
     if (nextCalled) {
+      return
+    }
+    if (renderState.aborted) {
+      next(false)
       return
     }
 
@@ -351,8 +365,12 @@ async function render (to, from, next) {
 
   try {
     // Call middleware
-    await callMiddleware.call(this, Components, app.context)
+    await callMiddleware.call(this, Components, app.context, undefined, renderState)
     if (nextCalled) {
+      return
+    }
+    if (renderState.aborted) {
+      next(false)
       return
     }
     if (app.context._errored) {
@@ -367,8 +385,12 @@ async function render (to, from, next) {
     layout = await this.loadLayout(layout)
 
     // Call middleware for layout
-    await callMiddleware.call(this, Components, app.context, layout)
+    await callMiddleware.call(this, Components, app.context, layout, renderState)
     if (nextCalled) {
+      return
+    }
+    if (renderState.aborted) {
+      next(false)
       return
     }
     if (app.context._errored) {
@@ -488,9 +510,17 @@ async function render (to, from, next) {
         this.$loading.finish()
       }
 
+      if (renderState.aborted) {
+        next(false)
+        return
+      }
       next()
     }
   } catch (err) {
+    if (renderState.aborted) {
+      next(false)
+      return
+    }
     const error = err || {}
     if (error.message === 'ERR_REDIRECT') {
       return this.$nuxt.$emit('routeChanged', to, from, error)
@@ -636,6 +666,13 @@ function hotReloadAPI(_app) {
   let $components = getNuxtChildComponents(_app.$nuxt, [])
 
   $components.forEach(addHotReload.bind(_app))
+
+  if (_app.context.isHMR) {
+    const Components = getMatchedComponents(router.currentRoute)
+    Components.forEach((Component) => {
+      Component.prototype.constructor = Component
+    })
+  }
 }
 
 function addHotReload ($component, depth) {
@@ -772,7 +809,17 @@ async function mountApp (__app) {
 
   // Add beforeEach router hooks
   router.beforeEach(loadAsyncComponents.bind(_app))
-  router.beforeEach(render.bind(_app))
+
+  // Each new invocation of render() aborts previous invocation
+  let renderState = null
+  const boundRender = render.bind(_app)
+  router.beforeEach((to, from, next) => {
+    if (renderState) {
+      renderState.aborted = true
+    }
+    renderState = { aborted: false }
+    boundRender(to, from, next, renderState)
+  })
 
   // Fix in static: remove trailing slash to force hydration
   // Full static, if server-rendered: hydrate, to allow custom redirect to generated page
@@ -813,5 +860,6 @@ async function mountApp (__app) {
         errorHandler(err)
       }
     })
-  })
+  },
+  { aborted: false })
 }

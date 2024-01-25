@@ -1,11 +1,11 @@
 <template>
-  <div class="content-container" style="margin: 150px auto">
+  <div class="content-container" style="margin: 150px auto; min-height: 40vh;">
     <h2>Akutelle Stellenaus&shy;schreibungen</h2>
     <div class="jobListings">
       <nuxt-link v-for="job in jobs" :key="job.title" class="jobListing" :to="'/jobs/' + job.slug">
         <h3 style="margin: 0 0 10px 0">{{ job.title }}</h3>
         <h4 style="margin: 0">{{ job.worktime }}</h4>
-        <img class="watermark" src="/img/logo_about.svg" width="200" alt="watermark" />
+        <img class="watermark" src="/img/gm_hairstudio_logo_about.svg" width="200" alt="watermark" />
       </nuxt-link>
     </div>
   </div>

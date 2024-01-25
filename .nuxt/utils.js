@@ -57,7 +57,6 @@ export function getChildrenComponentInstancesUsingFetch(vm, instances = []) {
   for (const child of children) {
     if (child.$fetch) {
       instances.push(child)
-      continue; // Don't get the children since it will reload the template
     }
     if (child.$children) {
       getChildrenComponentInstancesUsingFetch(child, instances)
@@ -246,8 +245,8 @@ export async function setContext (app, context) {
           })
         }
         if (process.client) {
-          // https://developer.mozilla.org/en-US/docs/Web/API/Location/replace
-          window.location.replace(path)
+          // https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
+          window.location.assign(path)
 
           // Throw a redirect error
           throw new Error('ERR_REDIRECT')
@@ -256,6 +255,7 @@ export async function setContext (app, context) {
     }
     if (process.server) {
       app.context.beforeNuxtRender = fn => context.beforeRenderFns.push(fn)
+      app.context.beforeSerialize = fn => context.beforeSerializeFns.push(fn)
     }
     if (process.client) {
       app.context.nuxtState = window.__NUXT__
@@ -276,6 +276,10 @@ export async function setContext (app, context) {
     app.context.from = fromRouteData
   }
 
+  if (context.error) {
+    app.context.error = context.error
+  }
+
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
@@ -284,13 +288,13 @@ export async function setContext (app, context) {
   app.context.query = app.context.route.query || {}
 }
 
-export function middlewareSeries (promises, appContext) {
-  if (!promises.length || appContext._redirected || appContext._errored) {
+export function middlewareSeries (promises, appContext, renderState) {
+  if (!promises.length || appContext._redirected || appContext._errored || (renderState && renderState.aborted)) {
     return Promise.resolve()
   }
   return promisify(promises[0], appContext)
     .then(() => {
-      return middlewareSeries(promises.slice(1), appContext)
+      return middlewareSeries(promises.slice(1), appContext, renderState)
     })
 }
 

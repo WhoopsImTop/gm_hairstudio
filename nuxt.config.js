@@ -9,7 +9,7 @@ export default {
       lang: "de",
     },
     title:
-      "GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon",
+      "GM Professional Hairstudio in Freiburg - Freiburgs Bestbewertester Friseursalon",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -17,7 +17,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!",
+          "Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg.",
       },
       { property: "og:type", content: "website" },
       {
@@ -28,7 +28,7 @@ export default {
       {
         property: "og:description",
         content:
-          "GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!",
+          "Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg.",
       },
       { property: "og:url", content: "https://www.gmhairstudio.de/" },
       {
@@ -47,7 +47,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "GM Professional Hairstudio ist ein Friseursalon in Freiburg im Breisgau. Wir bieten eine breite Palette von Dienstleistungen an, darunter Haarschnitte, Colorationen, Balayage, Highlights, Dauerwellen, Färben, Schneiden, Föhnen, Styling und mehr. Unsere erfahrenen Friseure sind Experten in ihrem Bereich und verwenden nur die besten Produkte, um Ihnen ein perfektes Ergebnis zu bieten. Wir legen großen Wert auf Kundenservice und bieten Ihnen eine entspannte und angenehme Atmosphäre. Wir freuen uns auf Ihren Besuch!",
+          "Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg.",
       },
       {
         name: "twitter:image",
@@ -59,7 +59,7 @@ export default {
       {
         name: "keywords",
         content:
-          "friseur, friseursalon, haarschnitt, coloration, balayage, highlights, dauerhafte welle, färben, schneiden, föhnen, styling, freiburg im breisgau, gm professional hairstudio, gülseren, mo, barber, güterbahnhof",
+          "friseur freiburg, friseur güterbahnhof, barber_mo salon, barber_mo, Gm Professional Hairstudio, Haare schneiden Freiburg",
       },
     ],
     link: [

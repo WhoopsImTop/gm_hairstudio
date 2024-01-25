@@ -6,11 +6,12 @@
         margin-top: 0;
         text-transform: uppercase;
         color: #a48242;
-        margin-bottom: 100px;
+        margin-bottom: 5px;
       "
     >
       stand 01.11.2023
     </p>
+    <p style="margin-top: 0px; font-size: 12px; margin-bottom: 100px;">Die aktuellsten Preise finden Sie ins unserem Buchungssystem oder direkt im Salon in Freiburg.</p>
 
     <preisliste
       v-for="(liste, key) in Preisliste"

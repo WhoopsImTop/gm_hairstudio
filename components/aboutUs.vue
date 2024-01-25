@@ -8,10 +8,12 @@
       </div>
       <div class="text-col">
         <p>
-          Unter dem Aspekt "stilvoll - zeitlos - modern" werden Sie bei uns
-          individuell und typgerecht beraten! Wir sind Gülseren und Mohammad,
-          Haare sind unsere Leidenschaft. Wir werden Ihnen den perfekten, auf
-          ihre wünsche angepassten Haarschnitt bieten.
+          "Entdecken Sie bei uns im bestbewerteten Salon Freiburg einen
+          Haarschnitt, der stilvoll, zeitlos und modern ist. Als renommierte
+          Friseure in Freiburg bieten wir, Gülseren und Mohammad, Ihnen eine
+          individuelle und typgerechte Beratung. Haare sind unsere Leidenschaft,
+          und wir verpflichten uns, Ihnen den perfekten Haarschnitt anzubieten,
+          der präzise auf Ihre Wünsche abgestimmt ist."
         </p>
         <div
           class="about-box"
@@ -29,11 +31,11 @@
               alt="toggle-btn"
             />
           </div>
-          <p class="about-text">
-            Ich bin seit dem 14. Lebensjahr begeistert davon, was ein Haarschnitt
-            ausmachen kann, Meine besonderen Fähigkeiten habe ich im Herren /
-            Barberbereich. Mich begeistern klassische wie auch moderne und
-            ausgefallene Frisuren. <br />
+          <p class="about-text" style="margin-bottom: 20px">
+            Ich bin seit dem 14. Lebensjahr begeistert davon, was ein
+            Haarschnitt ausmachen kann, Meine besonderen Fähigkeiten habe ich im
+            Herren / Barberbereich. Mich begeistern klassische wie auch moderne
+            und ausgefallene Frisuren. <br />
             Qualität statt Quantität wird bei mir großgeschrieben!
           </p>
         </div>
@@ -53,7 +55,7 @@
               alt="toggle-btn"
             />
           </div>
-          <p class="about-text">
+          <p class="about-text" style="margin-bottom: 20px">
             Meine Stärken liegen darin, meiner Kreativität im Colour Bereich
             freien Lauf zu lassen. Klassische Strähnen, Farbveredelungen,
             Farbkorrekturen, Extensions, Stylings oder aufwendige Balayage

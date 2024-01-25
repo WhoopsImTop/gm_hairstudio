@@ -5,7 +5,7 @@
       <divider></divider>
       <about-us id="ueber-uns"></about-us>
       <image-grid id="image-grid"></image-grid>
-      <google-reviews id="google-reviews" :reviews="reviews"></google-reviews>
+      <google-reviews id="google-reviews"></google-reviews>
       <unsere-preise id="unsere-preise"></unsere-preise>
     </div>
     <unsere-produkte id="unsere-produkte"></unsere-produkte>
@@ -31,11 +31,6 @@ export default {
   },
   data: () => {
     return {};
-  },
-  async asyncData({ $content }) {
-    const reviews = await $content("googleReviews").fetch();
-    console.log(reviews);
-    return { reviews };
   },
 
   jsonld() {
@@ -66,11 +61,6 @@ export default {
           opens: "09:00",
           closes: "19:00",
         },
-      ],
-      sameAs: [
-        "https://www.facebook.com/gm.professional.hairstudio",
-        "https://www.instagram.com/gm.professional.hairstudio/",
-        "https://www.studiobookr.com/en/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
       ],
     };
   },
