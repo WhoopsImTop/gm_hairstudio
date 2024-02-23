@@ -4,7 +4,7 @@
       <div class="row lined">
         <div class="col">
           <h4 style="text-transform: uppercase; margin-bottom: 0px;">Öffnungszeiten</h4>
-          <p style="margin-top: 10px">Mo-Sa: 9:00 - 19:00 Uhr</p>
+          <p style="margin-top: 10px">Di-Sa: 9:00 - 19:00 Uhr</p>
         </div>
         <div class="col">
           <h4 style="text-transform: uppercase; margin-bottom: 0px;">Kontakt</h4>
