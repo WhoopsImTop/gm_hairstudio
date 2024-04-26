@@ -42,8 +42,8 @@ export default {
   ],
 
   sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://gmhairstudio.de',
+    path: "/sitemap.xml",
+    hostname: "https://gmhairstudio.de",
     gzip: true,
   },
 
@@ -64,5 +64,9 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  
+  generate: {
+    dir: "public",
   },
 };
