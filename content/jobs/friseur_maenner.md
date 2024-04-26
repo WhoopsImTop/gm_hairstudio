@@ -24,10 +24,9 @@ mail: info@gmhairstudio.de
 
 # Friseur/in (M/W/D)
 
-#### Vollzeit
+**Vollzeit**
 
 Du bist ein/e leidenschaftliche/r Männer Friseur/in und hast ein Gespür für trendige Stylings und moderne Haarschnitte? Du möchtest Teil eines jungen und dynamischen Teams werden und in einem modernen Salon arbeiten? Dann suchen wir genau dich!
-
 Unser renommiertes Friseurunternehmen in Freiburg im Breisgau (Güterbahnhof) sucht Verstärkung für unser Team. Wir legen großen Wert auf Kreativität, Fachkenntnisse und exzellenten Kundenservice. Als Männer Friseur/in bei uns hast du die Möglichkeit, deine Leidenschaft für Haare und Styling auszuleben und unsere anspruchsvollen Kunden zu begeistern.
 
 #### Deine Benefits

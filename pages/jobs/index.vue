@@ -1,24 +1,18 @@
 <template>
-  <div class="content-container" style="margin: 150px auto; min-height: 40vh">
-    <h2>Akutelle Stellenaus&shy;schreibungen</h2>
-    <div class="jobListings">
+  <main class="container px-4 mx-auto mt-12 md:mt-24">
+    <h1 class="font-serif text-4xl md:text-7xl text-center font-bold">Unsere Stellenaus&shy;schreibungen</h1>
+    <div class="flex flex-col my-12 md:my-24">
       <nuxt-link
         v-for="job in jobs"
         :key="job.title"
-        class="jobListing"
+        class="flex flex-col border border-gold-500 rounded-lg p-8 mb-4 hover:bg-gold-50 transition-all duration-300 ease-in-out"
         :to="'/jobs/' + job.slug"
       >
-        <h3 style="margin: 0 0 10px 0">{{ job.title }}</h3>
-        <h4 style="margin: 0">{{ job.worktime }}</h4>
-        <img
-          class="watermark"
-          src="/img/gm_hairstudio_logo_about.svg"
-          width="200"
-          alt="watermark"
-        />
+        <h3 class="text-2xl font-serif font-bold text-black mb-0">{{ job.title }}</h3>
+        <h4 class="text-gold-500 text-sans text-sm mb-0">{{ job.worktime }}</h4>
       </nuxt-link>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -28,45 +22,15 @@ export default {
     const jobs = await $content("jobs").fetch();
     return { jobs };
   },
-
   head() {
     return {
-      title: "Stellenangebote - GM Professional Hairstudio in Freiburg",
+      title: "Stellenausschreibungen Friseur Freiburg",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "Aktuelle Stellenausschreibungen bei GM Professional Hairstudio in Freiburg im Breisgau",
-        },
-      ],
-      script: [
-        {
-          type: "application/ld+json",
-          json: {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://gmhairstudio.de/jobs/",
-            },
-            headline: "Stellenangebote - GM Professional Hairstudio",
-            image: "https://gmhairstudio.de/path/to/your/image.jpg", // Bild-URL hinzufügen
-            author: {
-              "@type": "Organization",
-              name: "GM Professional Hairstudio",
-              url: "https://gmhairstudio.de/jobs/",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "GM Professional Hairstudio", // Publisher-Name hinzufügen
-              logo: {
-                "@type": "ImageObject",
-                url: "https://gmhairstudio.de/path/to/logo.jpg", // Logo-URL hinzufügen
-              },
-            },
-            datePublished: "2024-01-25", // Veröffentlichungsdatum hinzufügen
-          },
+            "GM Professional Hairstudio in Freiburg - Werden Sie Teil unseres Teams. ✓Individuelle Looks ✓Typgerechte Beratung. Jetzt bewerben!",
         },
       ],
     };
@@ -74,41 +38,4 @@ export default {
 };
 </script>
 
-<style>
-.jobListings {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.jobListing {
-  background-color: var(--menu-bg-color);
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none !important;
-}
-
-.watermark {
-  position: absolute;
-  right: 0;
-  top: -20px;
-  transform: rotate(-45deg);
-  opacity: 0.3;
-  transition: 0.5s ease-in-out;
-}
-
-.jobListing:hover {
-  box-shadow: 0px 20px 20px #a4824220;
-}
-
-.jobListing:hover .watermark {
-  opacity: 0.5;
-  transform: rotate(-25deg) scale(1.1);
-}
-</style>
+<style></style>

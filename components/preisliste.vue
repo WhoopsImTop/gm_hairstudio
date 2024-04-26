@@ -1,8 +1,8 @@
 <template>
   <div class="preisliste">
     <div class="preisliste-header">
-      <img src="img/gm_hairstudio_cut.svg" alt="cut" />
-      <h2>{{ preisliste.Titel }}</h2>
+      <img src="/gm_hairstudio_cut.svg" alt="cut" />
+      <h2 :id="preisliste.Titel">{{ preisliste.Titel }}</h2>
     </div>
     <div class="preisliste-content">
       <div
@@ -15,11 +15,11 @@
         </div>
         <div class="preisliste-item-content">
           <!-- add subtitle if defined, draw a line and put a price at the end -->
-          <p v-if="item.Leistungsgruppe" class="preisliste-item-subtitle">
+          <p v-if="item.Leistungsgruppe" class="preisliste-item-subtitle text-gold-500">
             {{ item.Leistungsgruppe }}
           </p>
           <hr v-if="item.Preis" class="price-dashed-line" />
-          <span class="preisliste-item-price">{{
+          <span class="text-gold-500 preisliste-item-price">{{
             item.Preis
           }}</span>
         </div>
@@ -43,8 +43,7 @@ export default {
 }
 
 .preisliste-header {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
   margin: 50px 0;
 }
 
@@ -53,21 +52,16 @@ export default {
 }
 
 .preisliste-header h2 {
-  font-size: 1.5rem;
-  line-height: 1rem;
-  margin: 0;
-  font-weight: 500;
+  @apply text-3xl font-serif;
 }
 
 .preisliste-item {
+  @apply flex flex-col;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .preisliste-item-header {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
   margin-bottom: 10px;
 }
 
@@ -79,9 +73,7 @@ export default {
 }
 
 .preisliste-item-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @apply flex items-baseline justify-between;
   margin-bottom: 10px;
 }
 
@@ -89,8 +81,8 @@ export default {
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
+  margin-right: 10px;
   min-width: max-content;
-  color: var(--orange-color);
 }
 
 .preisliste-item-price {
@@ -98,14 +90,10 @@ export default {
   font-weight: 500;
   margin-left: 10px;
   min-width: max-content;
-  color: var(--orange-color);
 }
 
 .price-dashed-line {
-  border-top: 2px dashed var(--orange-color);
-  border-bottom: 0px;
-  width: 100%;
-  margin: 0px 10px;
+  @apply border-t-2 border-dashed border-gold-500 w-full;
 }
 
 @media (max-width: 1000px) {

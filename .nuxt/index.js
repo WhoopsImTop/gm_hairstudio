@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -9,16 +9,14 @@ import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
-import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_59d36d93 from 'nuxt_plugin_plugin_59d36d93' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_markdownit_472c6ef5 from 'nuxt_plugin_markdownit_472c6ef5' // Source: ./markdownit.js (mode: 'all')
-import nuxt_plugin_pluginclient_4dee378f from 'nuxt_plugin_pluginclient_4dee378f' // Source: ./content/plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_98b0add2 from 'nuxt_plugin_pluginserver_98b0add2' // Source: ./content/plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_d1d1c5ae from 'nuxt_plugin_axios_d1d1c5ae' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_jsonld_593ee954 from 'nuxt_plugin_jsonld_593ee954' // Source: ../plugins/jsonld (mode: 'all')
+import nuxt_plugin_plugin_709f81d1 from 'nuxt_plugin_plugin_709f81d1' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_944cdbf2 from 'nuxt_plugin_pluginclient_944cdbf2' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_1b93038f from 'nuxt_plugin_pluginserver_1b93038f' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_33366774 from 'nuxt_plugin_axios_33366774' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_gsapclient_05cf81a2 from 'nuxt_plugin_gsapclient_05cf81a2' // Source: ..\\plugins\\gsap.client.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -58,34 +56,19 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
-
-const originalRegisterModule = Vuex.Store.prototype.registerModule
-
-function registerModule (path, rawModule, options = {}) {
-  const preserveState = process.client && (
-    Array.isArray(path)
-      ? !!path.reduce((namespacedState, path) => namespacedState && namespacedState[path], this.state)
-      : path in this.state
-  )
-  return originalRegisterModule.call(this, path, rawModule, { preserveState, ...options })
-}
+const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp(ssrContext, config = {}) {
-  const store = createStore(ssrContext)
+  const store = null
   const router = await createRouter(ssrContext, config, { store })
-
-  // Add this.$router into store actions/mutations
-  store.$router = router
 
   // Create Root instance
 
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"htmlAttrs":{"lang":"de"},"title":"GM Professional Hairstudio in Freiburg - Freiburgs Bestbewertester Friseursalon","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg."},{"property":"og:type","content":"website"},{"property":"og:title","content":"GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon"},{"property":"og:description","content":"Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg."},{"property":"og:url","content":"https:\u002F\u002Fwww.gmhairstudio.de\u002F"},{"property":"og:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"property":"og:image:alt","content":"GM Professional Hairstudio Logo"},{"property":"og:site_name","content":"GM Professional Hairstudio"},{"property":"og:locale","content":"de_DE"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"GM Professional Hairstudio - Freiburgs Bestbewertester Friseursalon"},{"name":"twitter:description","content":"Willkommen bei GM Professional Hairstudio, dem bestbewerteten Friseur in Freiburg im Breisgau. Unser Salon bietet erstklassige Dienstleistungen wie Haarschnitte, Colorationen, Balayage, Highlights und vieles mehr. Unsere erfahrenen Friseure nutzen nur hochwertige Produkte, um Ihnen ein herausragendes Styling-Erlebnis zu garantieren. Genießen Sie exzellenten Kundenservice in einer entspannten Atmosphäre. Besuchen Sie uns und erleben Sie die Kunst des Haarstylings bei einem führenden Friseur in Freiburg."},{"name":"twitter:image","content":"https:\u002F\u002Fgmhairstudio.de\u002Fimg\u002Flogo.svg"},{"name":"twitter:image:alt","content":"GM Professional Hairstudio Logo"},{"name":"robots","content":"index, follow"},{"name":"googlebot","content":"index, follow"},{"name":"keywords","content":"friseur freiburg, friseur güterbahnhof, barber_mo salon, barber_mo, Gm Professional Hairstudio, Haare schneiden Freiburg"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"img\u002Ffavicon.png"}],"style":[],"script":[]},
+    head: {"title":"Freiburgs Bestbewertester Friseursalon am Güterbahnhof","htmlAttrs":{"lang":"de"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
-    store,
     router,
     nuxt: {
       defaultTransition,
@@ -130,9 +113,6 @@ async function createApp(ssrContext, config = {}) {
     ...App
   }
 
-  // Make app available into store via this.app
-  store.app = app
-
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -145,7 +125,6 @@ async function createApp(ssrContext, config = {}) {
 
   // Set context to app.context
   await setContext(app, {
-    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -173,9 +152,6 @@ async function createApp(ssrContext, config = {}) {
       app.context[key] = value
     }
 
-    // Add into store
-    store[key] = app[key]
-
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
     if (Vue[installKey]) {
@@ -197,13 +173,6 @@ async function createApp(ssrContext, config = {}) {
   // Inject runtime config as $config
   inject('config', config)
 
-  if (process.client) {
-    // Replace store state before plugins execution
-    if (window.__NUXT__ && window.__NUXT__.state) {
-      store.replaceState(window.__NUXT__.state)
-    }
-  }
-
   // Add enablePreview(previewData = {}) in context for plugins
   if (process.static && process.client) {
     app.context.enablePreview = function (previewData = {}) {
@@ -213,28 +182,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_59d36d93 === 'function') {
-    await nuxt_plugin_plugin_59d36d93(app.context, inject)
+  if (typeof nuxt_plugin_plugin_709f81d1 === 'function') {
+    await nuxt_plugin_plugin_709f81d1(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_markdownit_472c6ef5 === 'function') {
-    await nuxt_plugin_markdownit_472c6ef5(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_944cdbf2 === 'function') {
+    await nuxt_plugin_pluginclient_944cdbf2(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_4dee378f === 'function') {
-    await nuxt_plugin_pluginclient_4dee378f(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_1b93038f === 'function') {
+    await nuxt_plugin_pluginserver_1b93038f(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_98b0add2 === 'function') {
-    await nuxt_plugin_pluginserver_98b0add2(app.context, inject)
+  if (typeof nuxt_plugin_axios_33366774 === 'function') {
+    await nuxt_plugin_axios_33366774(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_d1d1c5ae === 'function') {
-    await nuxt_plugin_axios_d1d1c5ae(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_jsonld_593ee954 === 'function') {
-    await nuxt_plugin_jsonld_593ee954(app.context, inject)
+  if (process.client && typeof nuxt_plugin_gsapclient_05cf81a2 === 'function') {
+    await nuxt_plugin_gsapclient_05cf81a2(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -273,7 +238,6 @@ async function createApp(ssrContext, config = {}) {
   })
 
   return {
-    store,
     app,
     router
   }

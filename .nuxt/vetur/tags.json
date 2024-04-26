@@ -1,41 +1,38 @@
 {
-  "EliasEnglenLogo": {
-    "description": "Auto imported from components/EliasEnglenLogo.vue"
+  "CustomerSlider": {
+    "description": "Auto imported from components/customerSlider.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer.vue"
+  "FooterComponent": {
+    "description": "Auto imported from components/footerComponent.vue"
   },
-  "Header": {
-    "description": "Auto imported from components/Header.vue"
+  "GmLogo": {
+    "description": "Auto imported from components/gmLogo.vue"
   },
-  "NuxtLogo": {
-    "description": "Auto imported from components/NuxtLogo.vue"
+  "GoogleReviewComponent": {
+    "description": "Auto imported from components/googleReviewComponent.vue"
   },
-  "AboutUs": {
-    "description": "Auto imported from components/aboutUs.vue"
+  "GoogleReviewNotice": {
+    "description": "Auto imported from components/googleReviewNotice.vue"
   },
-  "BookingBtn": {
-    "description": "Auto imported from components/bookingBtn.vue"
+  "HeaderComponent": {
+    "description": "Auto imported from components/headerComponent.vue"
   },
-  "Divider": {
-    "description": "Auto imported from components/divider.vue"
+  "LandingComponent": {
+    "description": "Auto imported from components/landingComponent.vue"
   },
-  "GoogleReviews": {
-    "description": "Auto imported from components/googleReviews.vue"
-  },
-  "ImageGrid": {
-    "description": "Auto imported from components/imageGrid.vue"
-  },
-  "MainHeader": {
-    "description": "Auto imported from components/mainHeader.vue"
+  "PreisComponent": {
+    "description": "Auto imported from components/preisComponent.vue"
   },
   "Preisliste": {
     "description": "Auto imported from components/preisliste.vue"
   },
-  "UnserePreise": {
-    "description": "Auto imported from components/unserePreise.vue"
+  "ReviewCard": {
+    "description": "Auto imported from components/reviewCard.vue"
   },
-  "UnsereProdukte": {
-    "description": "Auto imported from components/unsereProdukte.vue"
+  "UpcountingCard": {
+    "description": "Auto imported from components/upcountingCard.vue"
+  },
+  "VideoComponent": {
+    "description": "Auto imported from components/videoComponent.vue"
   }
 }

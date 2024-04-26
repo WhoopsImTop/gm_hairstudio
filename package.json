@@ -1,32 +1,30 @@
 {
-  "name": "studio-site",
+  "name": "gm-professional-hairstudio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "dev-old": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "export NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
+    "@nuxt/content": "^1.0.0",
     "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/markdownit": "^2.0.0",
-    "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/sitemap": "^2.4.0",
-    "@studio-freight/lenis": "^1.0.19",
-    "core-js": "^3.19.3",
-    "jspdf": "^2.5.1",
+    "core-js": "^3.25.3",
+    "firebase": "^10.11.1",
+    "gsap": "^3.12.5",
     "nuxt": "^2.15.8",
-    "nuxt-jsonld": "^1.5.7",
-    "swiper": "^9.0.2",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "swiper": "^6.8.4",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
-    "nuxt-compress": "^5.0.0"
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
   }
 }
