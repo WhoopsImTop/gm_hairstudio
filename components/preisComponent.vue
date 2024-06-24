@@ -420,7 +420,7 @@ export default {
             },
           ],
         },
-        {
+        /* {
           Titel: "Herrenhaarschnitt",
           leistungen: [
             {
@@ -589,7 +589,7 @@ export default {
               Dauer: "60 Min",
             },
           ],
-        },
+        }, */
       ],
     };
   },

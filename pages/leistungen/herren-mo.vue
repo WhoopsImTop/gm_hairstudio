@@ -1,5 +1,5 @@
 <template>
-  <div class="my-0 lg:mt-24">
+  <div class="my-0 lg:my-24">
     <div class="container px-4 mx-auto relative py-12 md:py-24">
       <h1
         class="font-serif text-4xl md:text-6xl text-center font-bold reveal reveal-instant uppercase"
@@ -8,12 +8,51 @@
         in Freiburg
       </h1>
       <p class="w-full lg:w-1/2 mx-auto text-center mt-4 reveal reveal-delayed">
-        Unser Herrenbereich ist auf unbestimmte Zeit geschlossen. Wir bitten um Ihr Verständnis.
+        Herzlich Willkommen bei GM Professional Hairstudio in Freiburg.
+        <span class="text-gold-500"
+          >Im Bereich von
+          <a href="https://www.instagram.com/barber_mo_/?hl=de" target="_blank"
+            >@barber_mo</a
+          >
+          sorgen wir für Ihren stilvollen Auftritt.</span
+        >
+        Wir sind Detailverliebt, und legen großen Wert auf typgerechte,
+        individuelle Beratung.
       </p>
+      <div class="flex justify-center mt-8 reveal reveal-delayed">
+        <a
+          class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white mx-2"
+          href="https://www.studiobookr.com/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
+          traget="_blank"
+          >Termin Buchen</a
+        >
+      </div>
       <div
         class="w-full flex items-center justify-center mt-12 reveal reveal-delayed"
       >
         <google-review-component class="mx-auto" />
+      </div>
+      <div class="grid grid-cols-2 gap-12 mt-12 mb-4 md:mb-24">
+        <video
+          class="xl:w-64 xl:mt-8 rounded -rotate-3 xl:absolute xl:top-0"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="/herren_video_01.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          class="xl:w-64 xl:mt-8 rounded rotate-3 xl:absolute xl:top-0 xl:right-0"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="/herren_video_02.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
@@ -63,7 +102,7 @@
       </div>
     </div>
 
-    <!-- <div class="container px-4 mx-auto mt-12 md:mt-24">
+    <div class="container px-4 mx-auto mt-12 md:mt-24">
       <h2 class="font-serif text-3xl md:text-5xl font-bold text-center reveal">
         Unsere Leistungen
       </h2>
@@ -72,7 +111,7 @@
           :sections="['Herrenhaarschnitt', 'Bartpflege', 'Kombi Paket']"
         />
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 

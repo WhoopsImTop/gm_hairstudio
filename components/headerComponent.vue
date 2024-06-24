@@ -44,13 +44,6 @@
         >
           <nuxt-link
             class="px-3 py-2 text-gold-500 hover:text-gold-700 hover:bg-gold-50 rounded"
-            to="/leistungen/herren"
-            @click="active = false"
-            >Herren</nuxt-link
-          >
-
-          <nuxt-link
-            class="px-3 py-2 text-gold-500 hover:text-gold-700 hover:bg-gold-50 rounded"
             to="/leistungen/damen"
             @click="active = false"
             >Damen</nuxt-link

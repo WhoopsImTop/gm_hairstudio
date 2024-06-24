@@ -8,7 +8,7 @@
       </client-only> -->
       <div
         id="ueber-uns"
-        class="my-24 md:my-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 items-center"
+        class="my-24 md:my-36 grid grid-cols-1 md:grid-cols-2 md:gap-32 items-center"
       >
         <div>
           <h2
@@ -21,19 +21,14 @@
             Willkommen im GM Professional Hairstudio, Ihrem exklusiven
             Friseursalon am Güterbahnhof in Freiburg im Breisgau! Unser
             hochwertiger Service verkörpert Stil, Zeitlosigkeit und Modernität.
-            Gülseren und Mohammad, Experten mit Leidenschaft für Haare, bieten
-            individuelle Beratung und perfekte Haarschnitte nach Ihren Wünschen.
-            Erleben Sie die Kunst der Haarpflege in unserem stilvollen Salon.
-            Termin vereinbaren und GM Professional Hairstudio entdecken!
+            Gülseren und ihr Team, Expertinnen mit Leidenschaft für Haare,
+            bieten individuelle Beratung und perfekte Haarschnitte nach Ihren
+            Wünschen. Erleben Sie die Kunst der Haarpflege in unserem stilvollen
+            Salon. Termin vereinbaren und GM Professional Hairstudio entdecken!
           </p>
           <div class="flex items-center my-8">
             <nuxt-link
               class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white reveal"
-              to="/ueber-uns/barber_mo"
-              >Mohammad</nuxt-link
-            >
-            <nuxt-link
-              class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white ml-4 reveal"
               to="/ueber-uns/guelseren"
               >Gülseren</nuxt-link
             >
@@ -60,8 +55,8 @@
             <google-review-notice />
           </div>
         </div>
-        <div class="lg:col-span-2">
-          <img src="/gm_hairstudio_about.webp" alt="Über uns" />
+        <div>
+          <img src="/guelseren_maria_martines.png" alt="Über uns" />
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -149,49 +144,6 @@
       </h2>
 
       <div
-        class="my-12 md:my-36 flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center"
-      >
-        <div>
-          <h3
-            class="text-2xl md:text-4xl font-serif font-bold uppercase mb-4 reveal"
-          >
-            Herren
-          </h3>
-          <p class="leading-relaxed reveal">
-            Tauchen Sie ein in die Welt des perfekten Stils im GM Professional
-            Hairstudio in Freiburg! Unser Herrenbereich bietet eine Vielzahl
-            exklusiver Dienstleistungen, darunter Herrenhaarschnitte wie den
-            Classic Cut, Classic Cut & Beard Trim, Haircut, Beard Trim & Eyebrow
-            Threading, Clipper Cuts in verschiedenen Längen, Fresh-ups,
-            Haarkränze und Dauerwellen für den Oberkopf. Zudem bieten wir
-            umfassende Bartpflege, einschließlich Konturenrasur, Bartpflege mit
-            Hot Towel, Nassrasur, Augenbrauenschneiden und -zupfen sowie
-            Entfernung von Ohren- und Nasenhaaren. Erforschen Sie auch unsere
-            Kombi-Pakete für den perfekten Look!
-          </p>
-          <nuxt-link
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal mr-3"
-            to="/leistungen/herren"
-            >Mehr erfahren</nuxt-link
-          >
-          <a
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal"
-            href="https://www.studiobookr.com/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
-            target="_blank"
-            >Termin Buchen</a
-          >
-        </div>
-        <div
-          class="aspect-square flex items-center overflow-hidden w-full rounded my-8 md:my-0"
-        >
-          <img
-            src="/gm_hairstudio_mosplace.jpeg"
-            alt="Mo's Place"
-            class="w-full"
-          />
-        </div>
-      </div>
-      <div
         class="my-24 md:my-36 grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center"
       >
         <div
@@ -231,7 +183,55 @@
           >
         </div>
       </div>
-
+      <div
+        class="my-12 md:my-36 flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center"
+      >
+        <div>
+          <h3
+            class="text-2xl md:text-4xl font-serif font-bold uppercase reveal"
+          >
+            Herren
+          </h3>
+          <h4
+            class="text-lg md:text-2xl font-serif font-bold uppercase mb-4 reveal"
+          >
+            (auf unbestimmte Zeit geschlossen)
+          </h4>
+          <p class="leading-relaxed reveal">
+            Tauchen Sie ein in die Welt des perfekten Stils im GM Professional
+            Hairstudio in Freiburg! Unser Herrenbereich bietet eine Vielzahl
+            exklusiver Dienstleistungen, darunter Herrenhaarschnitte wie den
+            Classic Cut, Classic Cut & Beard Trim, Haircut, Beard Trim & Eyebrow
+            Threading, Clipper Cuts in verschiedenen Längen, Fresh-ups,
+            Haarkränze und Dauerwellen für den Oberkopf. Zudem bieten wir
+            umfassende Bartpflege, einschließlich Konturenrasur, Bartpflege mit
+            Hot Towel, Nassrasur, Augenbrauenschneiden und -zupfen sowie
+            Entfernung von Ohren- und Nasenhaaren. Erforschen Sie auch unsere
+            Kombi-Pakete für den perfekten Look!
+          </p>
+          <!-- <nuxt-link
+            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal mr-3"
+            to="/leistungen/herren"
+            >Mehr erfahren</nuxt-link
+          > -->
+          <!-- <a
+            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal"
+            href="https://www.studiobookr.com/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
+            target="_blank"
+            >Termin Buchen</a
+          > -->
+        </div>
+        <div
+          class="aspect-square flex items-center overflow-hidden w-full rounded my-8 md:my-0"
+        >
+          <img
+            src="/gm_hairstudio_mosplace.jpeg"
+            alt="Mo's Place"
+            class="w-full"
+          />
+        </div>
+      </div>
+      
       <div class="my-32 md:my-64">
         <h2
           class="font-serif text-3xl md:text-5xl text-center font-bold reveal"
@@ -259,11 +259,16 @@
 import CustomerSlider from "../components/customerSlider.vue";
 import upcountingCard from "../components/upcountingCard.vue";
 import axios from "axios";
-import GoogleReviewNotice from '../components/googleReviewNotice.vue';
-import GoogleReviewComponent from '../components/googleReviewComponent.vue';
+import GoogleReviewNotice from "../components/googleReviewNotice.vue";
+import GoogleReviewComponent from "../components/googleReviewComponent.vue";
 
 export default {
-  components: { upcountingCard, CustomerSlider, GoogleReviewNotice, GoogleReviewComponent },
+  components: {
+    upcountingCard,
+    CustomerSlider,
+    GoogleReviewNotice,
+    GoogleReviewComponent,
+  },
   name: "IndexPage",
   layout: "main",
   head() {

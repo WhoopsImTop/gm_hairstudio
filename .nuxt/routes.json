@@ -2,70 +2,88 @@
   {
     "name": "datenschutz",
     "path": "/datenschutz",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\datenschutz.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/datenschutz.vue",
     "chunkName": "pages/datenschutz",
-    "url": "/datenschutz"
+    "url": "/datenschutz",
+    "_name": "_25adfb66"
   },
   {
     "name": "impressum",
     "path": "/impressum",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\impressum.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/impressum.vue",
     "chunkName": "pages/impressum",
-    "url": "/impressum"
+    "url": "/impressum",
+    "_name": "_6374377a"
   },
   {
     "name": "jobs",
     "path": "/jobs",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\jobs\\\\index.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/jobs/index.vue",
     "chunkName": "pages/jobs/index",
-    "url": "/jobs"
+    "url": "/jobs",
+    "_name": "_0c958566"
   },
   {
     "name": "leistungen",
     "path": "/leistungen",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\leistungen\\\\index.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/leistungen/index.vue",
     "chunkName": "pages/leistungen/index",
-    "url": "/leistungen"
+    "url": "/leistungen",
+    "_name": "_70f2d196"
   },
   {
     "name": "leistungen-damen",
     "path": "/leistungen/damen",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\leistungen\\\\damen.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/leistungen/damen.vue",
     "chunkName": "pages/leistungen/damen",
-    "url": "/leistungen/damen"
+    "url": "/leistungen/damen",
+    "_name": "_20b8897d"
   },
   {
     "name": "leistungen-herren",
     "path": "/leistungen/herren",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\leistungen\\\\herren.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/leistungen/herren.vue",
     "chunkName": "pages/leistungen/herren",
-    "url": "/leistungen/herren"
+    "url": "/leistungen/herren",
+    "_name": "_789ed15c"
+  },
+  {
+    "name": "leistungen-herren-mo",
+    "path": "/leistungen/herren-mo",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/leistungen/herren-mo.vue",
+    "chunkName": "pages/leistungen/herren-mo",
+    "url": "/leistungen/herren-mo",
+    "_name": "_5e6bb2ad"
   },
   {
     "name": "ueber-uns-barber_mo",
     "path": "/ueber-uns/barber_mo",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\ueber-uns\\\\barber_mo.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/ueber-uns/barber_mo.vue",
     "chunkName": "pages/ueber-uns/barber_mo",
-    "url": "/ueber-uns/barber_mo"
+    "url": "/ueber-uns/barber_mo",
+    "_name": "_a7eac676"
   },
   {
     "name": "ueber-uns-guelseren",
     "path": "/ueber-uns/guelseren",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\ueber-uns\\\\guelseren.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/ueber-uns/guelseren.vue",
     "chunkName": "pages/ueber-uns/guelseren",
-    "url": "/ueber-uns/guelseren"
+    "url": "/ueber-uns/guelseren",
+    "_name": "_c3275798"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\index.vue",
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/index.vue",
     "chunkName": "pages/index",
-    "url": "/"
+    "url": "/",
+    "_name": "_45eb17d5"
   },
   {
     "name": "jobs-slug",
     "path": "/jobs/:slug",
-    "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm-professional-hairstudio\\\\pages\\\\jobs\\\\_slug.vue",
-    "chunkName": "pages/jobs/_slug"
+    "component": "/Users/eliasenglen/Documents/Repositories/gm_hairstudio/pages/jobs/_slug.vue",
+    "chunkName": "pages/jobs/_slug",
+    "_name": "_0adee41e"
   }
 ]
