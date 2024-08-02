@@ -1,9 +1,15 @@
 <template>
-  <div class="container px-4 mx-auto mt-12 md:mt-24">
+  <div class="container px-4 mx-auto mt-12 md:mt-24 text-center">
+    <span
+      v-if="showHolidayNotice"
+      class="py-1 px-2 bg-red-200 rounded-lg text-red-900 inline-block mb-4 text-xs md:text-sm"
+      >Vom 05.08. - 13.08.2024 haben wir Betriebsferien.</span
+    >
     <h1
       class="font-serif text-4xl md:text-6xl text-center font-bold reveal reveal-instant uppercase"
     >
-      GM Professional Hairstudio <br> Ihr Friseur in Freiburg
+      GM Professional Hairstudio <br />
+      Ihr Friseur in Freiburg
     </h1>
     <p class="md:w-1/2 mx-auto text-center mt-4 reveal reveal-delayed">
       Herzlich Willkommen bei GM Professional Hairstudio.
@@ -33,7 +39,13 @@
 
 <script>
 export default {
+  data() {
+    return {
+      showHolidayNotice: false,
+    };
+  },
   mounted() {
+    this.checkHoliday();
     // Animation für den Titel
     this.$gsap.from(".reveal-instant", {
       y: 100,
@@ -49,6 +61,16 @@ export default {
       stagger: 0.3,
       delay: 0.35,
     });
+  },
+  methods: {
+    checkHoliday() {
+      const today = new Date();
+      const holidayEnd = new Date("2024-08-13");
+
+      if (today <= holidayEnd) {
+        this.showHolidayNotice = true;
+      }
+    },
   },
 };
 </script>

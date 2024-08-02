@@ -4,17 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _25adfb66 = () => interopDefault(import('../pages/datenschutz.vue' /* webpackChunkName: "pages/datenschutz" */))
-const _6374377a = () => interopDefault(import('../pages/impressum.vue' /* webpackChunkName: "pages/impressum" */))
-const _0c958566 = () => interopDefault(import('../pages/jobs/index.vue' /* webpackChunkName: "pages/jobs/index" */))
-const _70f2d196 = () => interopDefault(import('../pages/leistungen/index.vue' /* webpackChunkName: "pages/leistungen/index" */))
-const _20b8897d = () => interopDefault(import('../pages/leistungen/damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
-const _789ed15c = () => interopDefault(import('../pages/leistungen/herren.vue' /* webpackChunkName: "pages/leistungen/herren" */))
-const _5e6bb2ad = () => interopDefault(import('../pages/leistungen/herren-mo.vue' /* webpackChunkName: "pages/leistungen/herren-mo" */))
-const _a7eac676 = () => interopDefault(import('../pages/ueber-uns/barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
-const _c3275798 = () => interopDefault(import('../pages/ueber-uns/guelseren.vue' /* webpackChunkName: "pages/ueber-uns/guelseren" */))
-const _45eb17d5 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _0adee41e = () => interopDefault(import('../pages/jobs/_slug.vue' /* webpackChunkName: "pages/jobs/_slug" */))
+const _222aea71 = () => interopDefault(import('..\\pages\\datenschutz.vue' /* webpackChunkName: "pages/datenschutz" */))
+const _a0312576 = () => interopDefault(import('..\\pages\\impressum.vue' /* webpackChunkName: "pages/impressum" */))
+const _1f26210a = () => interopDefault(import('..\\pages\\jobs\\index.vue' /* webpackChunkName: "pages/jobs/index" */))
+const _30a7a69a = () => interopDefault(import('..\\pages\\leistungen\\index.vue' /* webpackChunkName: "pages/leistungen/index" */))
+const _3f2542fe = () => interopDefault(import('..\\pages\\leistungen\\damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
+const _0ad33a64 = () => interopDefault(import('..\\pages\\leistungen\\herren.vue' /* webpackChunkName: "pages/leistungen/herren" */))
+const _4433349e = () => interopDefault(import('..\\pages\\leistungen\\herren-mo.vue' /* webpackChunkName: "pages/leistungen/herren-mo" */))
+const _4976b2ca = () => interopDefault(import('..\\pages\\ueber-uns\\barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
+const _64b343ec = () => interopDefault(import('..\\pages\\ueber-uns\\guelseren.vue' /* webpackChunkName: "pages/ueber-uns/guelseren" */))
+const _625eeb20 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _1d6f7fc2 = () => interopDefault(import('..\\pages\\jobs\\_slug.vue' /* webpackChunkName: "pages/jobs/_slug" */))
 
 const emptyFn = () => {}
 
@@ -29,47 +29,47 @@ export const routerOptions = {
 
   routes: [{
     path: "/datenschutz",
-    component: _25adfb66,
+    component: _222aea71,
     name: "datenschutz"
   }, {
     path: "/impressum",
-    component: _6374377a,
+    component: _a0312576,
     name: "impressum"
   }, {
     path: "/jobs",
-    component: _0c958566,
+    component: _1f26210a,
     name: "jobs"
   }, {
     path: "/leistungen",
-    component: _70f2d196,
+    component: _30a7a69a,
     name: "leistungen"
   }, {
     path: "/leistungen/damen",
-    component: _20b8897d,
+    component: _3f2542fe,
     name: "leistungen-damen"
   }, {
     path: "/leistungen/herren",
-    component: _789ed15c,
+    component: _0ad33a64,
     name: "leistungen-herren"
   }, {
     path: "/leistungen/herren-mo",
-    component: _5e6bb2ad,
+    component: _4433349e,
     name: "leistungen-herren-mo"
   }, {
     path: "/ueber-uns/barber_mo",
-    component: _a7eac676,
+    component: _4976b2ca,
     name: "ueber-uns-barber_mo"
   }, {
     path: "/ueber-uns/guelseren",
-    component: _c3275798,
+    component: _64b343ec,
     name: "ueber-uns-guelseren"
   }, {
     path: "/",
-    component: _45eb17d5,
+    component: _625eeb20,
     name: "index"
   }, {
     path: "/jobs/:slug",
-    component: _0adee41e,
+    component: _1d6f7fc2,
     name: "jobs-slug"
   }],
 
