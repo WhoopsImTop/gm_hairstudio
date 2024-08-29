@@ -3,7 +3,7 @@
     <span
       v-if="showHolidayNotice"
       class="py-1 px-2 bg-red-200 rounded-lg text-red-900 inline-block mb-4 text-xs md:text-sm"
-      >Vom 05.08. - 13.08.2024 haben wir Betriebsferien.</span
+      >Vom 02.09. - 12.09.2024 haben wir aufgrund von Schulungszwecken geschlossen.</span
     >
     <h1
       class="font-serif text-4xl md:text-6xl text-center font-bold reveal reveal-instant uppercase"
@@ -65,7 +65,7 @@ export default {
   methods: {
     checkHoliday() {
       const today = new Date();
-      const holidayEnd = new Date("2024-08-13");
+      const holidayEnd = new Date("2024-09-12");
 
       if (today <= holidayEnd) {
         this.showHolidayNotice = true;
