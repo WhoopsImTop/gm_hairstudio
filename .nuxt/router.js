@@ -7,7 +7,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _674363db = () => interopDefault(import('..\\pages\\datenschutz.vue' /* webpackChunkName: "pages/datenschutz" */))
 const _86798da2 = () => interopDefault(import('..\\pages\\impressum.vue' /* webpackChunkName: "pages/impressum" */))
 const _643e9a74 = () => interopDefault(import('..\\pages\\jobs\\index.vue' /* webpackChunkName: "pages/jobs/index" */))
-const _2273eb84 = () => interopDefault(import('..\\pages\\leistungen.vue' /* webpackChunkName: "pages/leistungen" */))
 const _05d42ef8 = () => interopDefault(import('..\\pages\\leistungen\\index.vue' /* webpackChunkName: "pages/leistungen/index" */))
 const _a648bf2a = () => interopDefault(import('..\\pages\\leistungen\\damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
 const _a3e5b71e = () => interopDefault(import('..\\pages\\ueber-uns\\barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
@@ -41,16 +40,12 @@ export const routerOptions = {
     name: "jobs"
   }, {
     path: "/leistungen",
-    component: _2273eb84,
-    children: [{
-      path: "",
-      component: _05d42ef8,
-      name: "leistungen"
-    }, {
-      path: "damen",
-      component: _a648bf2a,
-      name: "leistungen-damen"
-    }]
+    component: _05d42ef8,
+    name: "leistungen"
+  }, {
+    path: "/leistungen/damen",
+    component: _a648bf2a,
+    name: "leistungen-damen"
   }, {
     path: "/ueber-uns/barber_mo",
     component: _a3e5b71e,
