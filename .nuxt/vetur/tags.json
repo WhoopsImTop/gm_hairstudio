@@ -1,6 +1,21 @@
 {
+  "AboutUs": {
+    "description": "Auto imported from components/aboutUs.vue"
+  },
+  "BookingBtn": {
+    "description": "Auto imported from components/bookingBtn.vue"
+  },
   "CustomerSlider": {
     "description": "Auto imported from components/customerSlider.vue"
+  },
+  "Divider": {
+    "description": "Auto imported from components/divider.vue"
+  },
+  "EliasEnglenLogo": {
+    "description": "Auto imported from components/EliasEnglenLogo.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
   },
   "FooterComponent": {
     "description": "Auto imported from components/footerComponent.vue"
@@ -14,11 +29,26 @@
   "GoogleReviewNotice": {
     "description": "Auto imported from components/googleReviewNotice.vue"
   },
+  "GoogleReviews": {
+    "description": "Auto imported from components/googleReviews.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
   "HeaderComponent": {
     "description": "Auto imported from components/headerComponent.vue"
   },
+  "ImageGrid": {
+    "description": "Auto imported from components/imageGrid.vue"
+  },
   "LandingComponent": {
     "description": "Auto imported from components/landingComponent.vue"
+  },
+  "MainHeader": {
+    "description": "Auto imported from components/mainHeader.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
   },
   "PreisComponent": {
     "description": "Auto imported from components/preisComponent.vue"
@@ -28,6 +58,12 @@
   },
   "ReviewCard": {
     "description": "Auto imported from components/reviewCard.vue"
+  },
+  "UnserePreise": {
+    "description": "Auto imported from components/unserePreise.vue"
+  },
+  "UnsereProdukte": {
+    "description": "Auto imported from components/unsereProdukte.vue"
   },
   "UpcountingCard": {
     "description": "Auto imported from components/upcountingCard.vue"

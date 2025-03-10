@@ -139,99 +139,6 @@
     </div>
 
     <div class="container px-4 mx-auto mt-16 md:mt-24">
-      <h2 class="font-serif text-3xl md:text-5xl text-center font-bold reveal">
-        Unsere Leistungen
-      </h2>
-
-      <div
-        class="my-24 md:my-36 grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center"
-      >
-        <div
-          class="aspect-square flex items-center overflow-hidden w-full rounded my-8 md:my-0"
-        >
-          <img
-            src="/gm_hairstudio_guelsisplace.jpg"
-            alt="Mo's Place"
-            class="w-full"
-          />
-        </div>
-        <div>
-          <h3
-            class="text-2xl md:text-4xl font-serif font-bold uppercase mb-4 reveal"
-          >
-            Damen
-          </h3>
-          <p class="leading-relaxed reveal">
-            Entdecken Sie die exklusiven Damen-Services im GM Professional
-            Hairstudio in Freiburg. Wir bieten perfekte Haarschnitte und
-            Stylings, individuelle Colorationen und Strähnen, sowie
-            professionelle Behandlungen wie Balayage und Extensions. Unsere
-            kosmetischen Angebote umfassen Augenbrauen- und Wimpernbehandlungen
-            sowie Damenbartentfernung. Vereinbaren Sie Ihren Termin noch heute
-            für einen neuen, strahlenden Look!
-          </p>
-          <nuxt-link
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal mr-3"
-            to="/leistungen/damen"
-            >Mehr erfahren</nuxt-link
-          >
-          <a
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal"
-            href="https://www.studiobookr.com/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
-            target="_blank"
-            >Termin Buchen</a
-          >
-        </div>
-      </div>
-      <div
-        class="my-12 md:my-36 flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center"
-      >
-        <div>
-          <h3
-            class="text-2xl md:text-4xl font-serif font-bold uppercase reveal"
-          >
-            Herren
-          </h3>
-          <h4
-            class="text-lg md:text-2xl font-serif font-bold uppercase mb-4 reveal"
-          >
-            (auf unbestimmte Zeit geschlossen)
-          </h4>
-          <p class="leading-relaxed reveal">
-            Tauchen Sie ein in die Welt des perfekten Stils im GM Professional
-            Hairstudio in Freiburg! Unser Herrenbereich bietet eine Vielzahl
-            exklusiver Dienstleistungen, darunter Herrenhaarschnitte wie den
-            Classic Cut, Classic Cut & Beard Trim, Haircut, Beard Trim & Eyebrow
-            Threading, Clipper Cuts in verschiedenen Längen, Fresh-ups,
-            Haarkränze und Dauerwellen für den Oberkopf. Zudem bieten wir
-            umfassende Bartpflege, einschließlich Konturenrasur, Bartpflege mit
-            Hot Towel, Nassrasur, Augenbrauenschneiden und -zupfen sowie
-            Entfernung von Ohren- und Nasenhaaren. Erforschen Sie auch unsere
-            Kombi-Pakete für den perfekten Look!
-          </p>
-          <!-- <nuxt-link
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal mr-3"
-            to="/leistungen/herren"
-            >Mehr erfahren</nuxt-link
-          > -->
-          <!-- <a
-            class="px-4 py-2 bg-gold-500 hover:bg-gold-700 text-white inline-block mt-8 reveal"
-            href="https://www.studiobookr.com/gm-professional-hairstudio-67752?fbclid=PAAaacxS00Iiygaf2pJYMOxNU3ITaO9L6gxGmw2-jAIA4GXiw6rqmavZbfgxA#/"
-            target="_blank"
-            >Termin Buchen</a
-          > -->
-        </div>
-        <div
-          class="aspect-square flex items-center overflow-hidden w-full rounded my-8 md:my-0"
-        >
-          <img
-            src="/gm_hairstudio_mosplace.jpeg"
-            alt="Mo's Place"
-            class="w-full"
-          />
-        </div>
-      </div>
-      
       <div class="my-32 md:my-64">
         <h2
           class="font-serif text-3xl md:text-5xl text-center font-bold reveal"
@@ -242,7 +149,7 @@
           class="columns-2 md:columns-3 space-y-4 md:space-y-8 gap-4 md:gap-8 mt-12"
         >
           <img
-            v-for="i in 13"
+            v-for="i in 8"
             :key="i"
             :src="'/gm_slider_' + i + '.jpeg'"
             alt="Kundenbilder"

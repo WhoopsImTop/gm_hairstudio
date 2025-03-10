@@ -12,7 +12,7 @@
           ref="imageContainer"
         >
           <img
-            :src="'/gm_slider_' + (i % 13) + '.jpeg'"
+            :src="'/gm_slider_' + (i % 8) + '.jpeg'"
             :alt="'Professional Hairstudio Kundenfoto ' + i"
             :title="'Professional Hairstudio Kundenfoto ' + i"
             class="h-full w-full object-cover"

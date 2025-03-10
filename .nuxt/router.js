@@ -4,17 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _25adfb66 = () => interopDefault(import('../pages/datenschutz.vue' /* webpackChunkName: "pages/datenschutz" */))
-const _6374377a = () => interopDefault(import('../pages/impressum.vue' /* webpackChunkName: "pages/impressum" */))
-const _0c958566 = () => interopDefault(import('../pages/jobs/index.vue' /* webpackChunkName: "pages/jobs/index" */))
-const _70f2d196 = () => interopDefault(import('../pages/leistungen/index.vue' /* webpackChunkName: "pages/leistungen/index" */))
-const _20b8897d = () => interopDefault(import('../pages/leistungen/damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
-const _789ed15c = () => interopDefault(import('../pages/leistungen/herren.vue' /* webpackChunkName: "pages/leistungen/herren" */))
-const _5e6bb2ad = () => interopDefault(import('../pages/leistungen/herren-mo.vue' /* webpackChunkName: "pages/leistungen/herren-mo" */))
-const _a7eac676 = () => interopDefault(import('../pages/ueber-uns/barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
-const _c3275798 = () => interopDefault(import('../pages/ueber-uns/guelseren.vue' /* webpackChunkName: "pages/ueber-uns/guelseren" */))
-const _45eb17d5 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _0adee41e = () => interopDefault(import('../pages/jobs/_slug.vue' /* webpackChunkName: "pages/jobs/_slug" */))
+const _674363db = () => interopDefault(import('..\\pages\\datenschutz.vue' /* webpackChunkName: "pages/datenschutz" */))
+const _86798da2 = () => interopDefault(import('..\\pages\\impressum.vue' /* webpackChunkName: "pages/impressum" */))
+const _643e9a74 = () => interopDefault(import('..\\pages\\jobs\\index.vue' /* webpackChunkName: "pages/jobs/index" */))
+const _2273eb84 = () => interopDefault(import('..\\pages\\leistungen.vue' /* webpackChunkName: "pages/leistungen" */))
+const _05d42ef8 = () => interopDefault(import('..\\pages\\leistungen\\index.vue' /* webpackChunkName: "pages/leistungen/index" */))
+const _a648bf2a = () => interopDefault(import('..\\pages\\leistungen\\damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
+const _a3e5b71e = () => interopDefault(import('..\\pages\\ueber-uns\\barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
+const _bf224840 = () => interopDefault(import('..\\pages\\ueber-uns\\guelseren.vue' /* webpackChunkName: "pages/ueber-uns/guelseren" */))
+const _c7fd87ec = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _6287f92c = () => interopDefault(import('..\\pages\\jobs\\_slug.vue' /* webpackChunkName: "pages/jobs/_slug" */))
+const _cb6aca7c = () => interopDefault(import('..\\pages\\_slug.vue' /* webpackChunkName: "pages/_slug" */))
 
 const emptyFn = () => {}
 
@@ -29,48 +29,48 @@ export const routerOptions = {
 
   routes: [{
     path: "/datenschutz",
-    component: _25adfb66,
+    component: _674363db,
     name: "datenschutz"
   }, {
     path: "/impressum",
-    component: _6374377a,
+    component: _86798da2,
     name: "impressum"
   }, {
     path: "/jobs",
-    component: _0c958566,
+    component: _643e9a74,
     name: "jobs"
   }, {
     path: "/leistungen",
-    component: _70f2d196,
-    name: "leistungen"
-  }, {
-    path: "/leistungen/damen",
-    component: _20b8897d,
-    name: "leistungen-damen"
-  }, {
-    path: "/leistungen/herren",
-    component: _789ed15c,
-    name: "leistungen-herren"
-  }, {
-    path: "/leistungen/herren-mo",
-    component: _5e6bb2ad,
-    name: "leistungen-herren-mo"
+    component: _2273eb84,
+    children: [{
+      path: "",
+      component: _05d42ef8,
+      name: "leistungen"
+    }, {
+      path: "damen",
+      component: _a648bf2a,
+      name: "leistungen-damen"
+    }]
   }, {
     path: "/ueber-uns/barber_mo",
-    component: _a7eac676,
+    component: _a3e5b71e,
     name: "ueber-uns-barber_mo"
   }, {
     path: "/ueber-uns/guelseren",
-    component: _c3275798,
+    component: _bf224840,
     name: "ueber-uns-guelseren"
   }, {
     path: "/",
-    component: _45eb17d5,
+    component: _c7fd87ec,
     name: "index"
   }, {
     path: "/jobs/:slug",
-    component: _0adee41e,
+    component: _6287f92c,
     name: "jobs-slug"
+  }, {
+    path: "/:slug",
+    component: _cb6aca7c,
+    name: "slug"
   }],
 
   fallback: false
