@@ -219,30 +219,34 @@ export default {
         this.reviews = reviewsWithText.slice(0, 3);
       }
     } else {
-      await axios
-        .get("https://api.eliasenglen.de/google-reviews")
-        .then((response) => {
-          this.reviewCount = response.data.user_ratings_total;
-          this.reviews = response.data.reviews;
-          //check how many reviews have text
-          const reviewsWithText = this.reviews.filter(
-            (review) => review.text !== ""
-          );
-          //if there are less than 3 reviews with text fill up with reviews without text
-          if (reviewsWithText.length < 3) {
-            const reviewsWithoutText = this.reviews.filter(
-              (review) => review.text === ""
+      try {
+        await axios
+          .get("https://api.eliasenglen.de/google-reviews")
+          .then((response) => {
+            this.reviewCount = response.data.user_ratings_total;
+            this.reviews = response.data.reviews;
+            //check how many reviews have text
+            const reviewsWithText = this.reviews.filter(
+              (review) => review.text !== ""
             );
-            this.reviews = reviewsWithText.concat(
-              reviewsWithoutText.slice(0, 3 - reviewsWithText.length)
-            );
-          } else {
-            this.reviews = reviewsWithText.slice(0, 3);
-          }
+            //if there are less than 3 reviews with text fill up with reviews without text
+            if (reviewsWithText.length < 3) {
+              const reviewsWithoutText = this.reviews.filter(
+                (review) => review.text === ""
+              );
+              this.reviews = reviewsWithText.concat(
+                reviewsWithoutText.slice(0, 3 - reviewsWithText.length)
+              );
+            } else {
+              this.reviews = reviewsWithText.slice(0, 3);
+            }
 
-          sessionStorage.setItem("reviewCount", this.reviewCount);
-          sessionStorage.setItem("reviews", JSON.stringify(this.reviews));
-        });
+            sessionStorage.setItem("reviewCount", this.reviewCount);
+            sessionStorage.setItem("reviews", JSON.stringify(this.reviews));
+          });
+      } catch (error) {
+        console.error(error);
+      }
     }
   },
 };

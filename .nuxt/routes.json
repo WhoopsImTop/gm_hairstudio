@@ -2,26 +2,48 @@
   {
     "name": "datenschutz",
     "path": "/datenschutz",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\datenschutz.vue",
     "chunkName": "pages/datenschutz",
     "url": "/datenschutz"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\datenschutz.vue",
+    "chunkName": "pages/datenschutz",
+    "url": "/datenschutz",
+    "_name": "_222aea71"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "impressum",
     "path": "/impressum",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\impressum.vue",
     "chunkName": "pages/impressum",
     "url": "/impressum"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\impressum.vue",
+    "chunkName": "pages/impressum",
+    "url": "/impressum",
+    "_name": "_a0312576"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "jobs",
     "path": "/jobs",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\index.vue",
     "chunkName": "pages/jobs/index",
     "url": "/jobs"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\index.vue",
+    "chunkName": "pages/jobs/index",
+    "url": "/jobs",
+    "_name": "_1f26210a"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "path": "/leistungen",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen.vue",
     "chunkName": "pages/leistungen",
     "children": [
@@ -40,31 +62,83 @@
         "url": "/leistungen/damen"
       }
     ]
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen\\\\index.vue",
+    "chunkName": "pages/leistungen/index",
+    "url": "/leistungen",
+    "_name": "_30a7a69a"
+  },
+  {
+    "name": "leistungen-damen",
+    "path": "/leistungen/damen",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen\\\\damen.vue",
+    "chunkName": "pages/leistungen/damen",
+    "url": "/leistungen/damen",
+    "_name": "_3f2542fe"
+  },
+  {
+    "name": "leistungen-herren",
+    "path": "/leistungen/herren",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen\\\\herren.vue",
+    "chunkName": "pages/leistungen/herren",
+    "url": "/leistungen/herren",
+    "_name": "_0ad33a64"
+  },
+  {
+    "name": "leistungen-herren-mo",
+    "path": "/leistungen/herren-mo",
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\leistungen\\\\herren-mo.vue",
+    "chunkName": "pages/leistungen/herren-mo",
+    "url": "/leistungen/herren-mo",
+    "_name": "_4433349e"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "ueber-uns-barber_mo",
     "path": "/ueber-uns/barber_mo",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\ueber-uns\\\\barber_mo.vue",
     "chunkName": "pages/ueber-uns/barber_mo",
     "url": "/ueber-uns/barber_mo"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\ueber-uns\\\\barber_mo.vue",
+    "chunkName": "pages/ueber-uns/barber_mo",
+    "url": "/ueber-uns/barber_mo",
+    "_name": "_4976b2ca"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "ueber-uns-guelseren",
     "path": "/ueber-uns/guelseren",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\ueber-uns\\\\guelseren.vue",
     "chunkName": "pages/ueber-uns/guelseren",
     "url": "/ueber-uns/guelseren"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\ueber-uns\\\\guelseren.vue",
+    "chunkName": "pages/ueber-uns/guelseren",
+    "url": "/ueber-uns/guelseren",
+    "_name": "_64b343ec"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "index",
     "path": "/",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "url": "/"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_625eeb20"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   },
   {
     "name": "jobs-slug",
     "path": "/jobs/:slug",
+<<<<<<< HEAD
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\_slug.vue",
     "chunkName": "pages/jobs/_slug"
   },
@@ -73,5 +147,10 @@
     "path": "/:slug",
     "component": "C:\\\\Users\\\\info\\\\OneDrive\\\\Dokumente\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\_slug.vue",
     "chunkName": "pages/_slug"
+=======
+    "component": "C:\\\\Users\\\\info\\\\Documents\\\\Repositories\\\\gm_hairstudio\\\\pages\\\\jobs\\\\_slug.vue",
+    "chunkName": "pages/jobs/_slug",
+    "_name": "_1d6f7fc2"
+>>>>>>> 7cce386d49a2a40bbb12f913f146041a90c00b41
   }
 ]
