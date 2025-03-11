@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ueber-uns/barber_mo", {data:[{}],fetch:{},mutations:[]});
