@@ -5,6 +5,7 @@ export { default as GoogleReviewComponent } from '../..\\components\\googleRevie
 export { default as GoogleReviewNotice } from '../..\\components\\googleReviewNotice.vue'
 export { default as HeaderComponent } from '../..\\components\\headerComponent.vue'
 export { default as ImageGrid } from '../..\\components\\imageGrid.vue'
+export { default as InformationModal } from '../..\\components\\informationModal.vue'
 export { default as LandingComponent } from '../..\\components\\landingComponent.vue'
 export { default as PreisComponent } from '../..\\components\\preisComponent.vue'
 export { default as Preisliste } from '../..\\components\\preisliste.vue'

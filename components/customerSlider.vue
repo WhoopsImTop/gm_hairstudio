@@ -45,7 +45,7 @@ export default {
         // Reset the slider to the beginning
         this.offsetX = 0;
       } else {
-        this.offsetX -= 3 + this.speed;
+        this.offsetX -= 1 + this.speed;
       }
       this.animationId = requestAnimationFrame(this.animateSlider);
     },

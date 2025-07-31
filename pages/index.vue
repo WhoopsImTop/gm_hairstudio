@@ -1,5 +1,9 @@
 <template>
   <main>
+    <information-modal
+      v-if="showInformationModal"
+      @close="showInformationModal = false"
+    />
     <landingComponent />
     <customer-slider />
     <div class="container px-4 mx-auto mt-24">
@@ -59,6 +63,18 @@
           <img src="/guelseren_maria_martines.png" alt="Über uns" />
         </div>
       </div>
+      <div
+        class="columns-4 gap-4 w-full md:w-3/4 mx-auto mb-12 md:mb-24"
+      >
+        <div v-for="i in 8" :key="i" class="mb-4 break-inside-avoid">
+          <img
+            :src="`/laden/${i}.jpg`"
+            alt="Bild"
+            class="w-full h-auto object-contain rounded-lg"
+          />
+        </div>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <review-card
           v-for="review in reviews"
@@ -194,6 +210,7 @@ export default {
     return {
       reviewCount: 414,
       reviews: [],
+      showInformationModal: true,
     };
   },
   async mounted() {

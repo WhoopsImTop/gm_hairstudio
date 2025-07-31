@@ -20,6 +20,9 @@
   "ImageGrid": {
     "description": "Auto imported from components/imageGrid.vue"
   },
+  "InformationModal": {
+    "description": "Auto imported from components/informationModal.vue"
+  },
   "LandingComponent": {
     "description": "Auto imported from components/landingComponent.vue"
   },

@@ -13,6 +13,7 @@ You can directly use them in pages and other components without the need to impo
 - `<GoogleReviewNotice>` | `<google-review-notice>` (components/googleReviewNotice.vue)
 - `<HeaderComponent>` | `<header-component>` (components/headerComponent.vue)
 - `<ImageGrid>` | `<image-grid>` (components/imageGrid.vue)
+- `<InformationModal>` | `<information-modal>` (components/informationModal.vue)
 - `<LandingComponent>` | `<landing-component>` (components/landingComponent.vue)
 - `<PreisComponent>` | `<preis-component>` (components/preisComponent.vue)
 - `<Preisliste>` | `<preisliste>` (components/preisliste.vue)
