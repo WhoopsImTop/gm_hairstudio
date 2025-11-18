@@ -8,7 +8,7 @@
         <p class="mb-2">
           Liebe Kundinnen und Kunden,<br />
           unser Friseursalon GM PROFESSIONAL HAIRSTUDIO bleibt vom <b>20. August
-          2025</b> bis einschließlich <b>20. November 2025</b> aufgrund einer intensiven
+          2025</b> bis einschließlich <b>05. Dezember 2025</b> aufgrund einer intensiven
           Weiterbildung <b>geschlossen</b>.
         </p>
         <p class="mb-2">
@@ -24,7 +24,7 @@
           willkommen zu heißen.
         </p>
         <p class="mb-2">
-          Ich freue mich sehr, Sie ab Ende November 2025 wieder persönlich im
+          Ich freue mich sehr, Sie ab Dezember 2025 wieder persönlich im
           Salon begrüßen zu dürfen – mit frischem Wissen, neuen Ideen und
           gewohnter Leidenschaft für Ihr Haar!
         </p>
