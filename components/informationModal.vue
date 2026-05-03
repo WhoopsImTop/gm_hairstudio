@@ -24,7 +24,7 @@
           willkommen zu heißen.
         </p>
         <p class="mb-2">
-          Ich freue mich sehr, Sie ab anfang Dezember 2025 wieder persönlich im
+          Ich freue mich sehr, Sie ab Dezember 2025 wieder persönlich im
           Salon begrüßen zu dürfen – mit frischem Wissen, neuen Ideen und
           gewohnter Leidenschaft für Ihr Haar!
         </p>
