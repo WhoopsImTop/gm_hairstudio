@@ -210,7 +210,7 @@ export default {
     return {
       reviewCount: 414,
       reviews: [],
-      showInformationModal: true,
+      showInformationModal: false,
     };
   },
   async mounted() {

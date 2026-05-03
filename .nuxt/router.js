@@ -9,7 +9,6 @@ const _86798da2 = () => interopDefault(import('..\\pages\\impressum.vue' /* webp
 const _643e9a74 = () => interopDefault(import('..\\pages\\jobs\\index.vue' /* webpackChunkName: "pages/jobs/index" */))
 const _05d42ef8 = () => interopDefault(import('..\\pages\\leistungen\\index.vue' /* webpackChunkName: "pages/leistungen/index" */))
 const _a648bf2a = () => interopDefault(import('..\\pages\\leistungen\\damen.vue' /* webpackChunkName: "pages/leistungen/damen" */))
-const _a3e5b71e = () => interopDefault(import('..\\pages\\ueber-uns\\barber_mo.vue' /* webpackChunkName: "pages/ueber-uns/barber_mo" */))
 const _bf224840 = () => interopDefault(import('..\\pages\\ueber-uns\\guelseren.vue' /* webpackChunkName: "pages/ueber-uns/guelseren" */))
 const _c7fd87ec = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _6287f92c = () => interopDefault(import('..\\pages\\jobs\\_slug.vue' /* webpackChunkName: "pages/jobs/_slug" */))
@@ -46,10 +45,6 @@ export const routerOptions = {
     path: "/leistungen/damen",
     component: _a648bf2a,
     name: "leistungen-damen"
-  }, {
-    path: "/ueber-uns/barber_mo",
-    component: _a3e5b71e,
-    name: "ueber-uns-barber_mo"
   }, {
     path: "/ueber-uns/guelseren",
     component: _bf224840,

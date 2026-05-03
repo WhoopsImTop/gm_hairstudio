@@ -33,16 +33,14 @@
             Öffnungszeiten
           </h3>
           <p class="leading-relaxed">
-            Montag: Geschlossen
-            <br />
-            Di - Sa: 09:00 - 19:00
+            Nach Terminvereinbarung
           </p>
         </div>
       </div>
       <div class="border-t border-gold-200 mt-6 pt-6 text-center"></div>
       <div class="grid grid-cols-1 md:grid-cols-2">
         <p class="text-gold-600 text-sm">
-          &copy; 2024 GM Professional Hairstudio.
+          &copy; 2026 GM Professional Hairstudio.
         </p>
         <div class="flex items-center md:justify-end mt-4 md:mt-0">
           <nuxt-link to="/impressum" class="text-gold-600 hover:text-gold-700 text-sm"
